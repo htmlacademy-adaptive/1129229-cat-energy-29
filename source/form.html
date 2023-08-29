@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Формы</title>
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -30,78 +31,67 @@
       </nav>
     </div>
   </header>
-  <main class="page-form">
+  <main class="page-form"> <!--поменять название?-->
     <div class="page-form__wrapper">
       <div class="page-form__title">Подбор программы</div>
       <span class="page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</span>
       <form class="main-form" action="">
         <fieldset class="main-form__data data">
-          <!--legend нужен скрытый?-->
+          <legend class="visually-hidden">Информация о коте</legend>
           <ul class="data__list">
             <li class="data__item">
-              <label class="data__label" for="name">
-                ИМЯ:*
-                <input id="name" class="data__input" type="text" required>
-              </label>
+              <label class="data__label" for="name">ИМЯ:*</label>
+              <input id="name" class="data__input" type="text" required>
             </li>
             <li class="data__item">
-              <label class="data__label" for="name">
-                Вес (кг):*
-                <input id="name" class="data__input" type="text" required>
-              </label>
+              <label class="data__label" for="name">Вес (кг):*</label>
+              <input id="name" class="data__input" type="text" required>
             </li>
             <li class="data__item">
-              <label class="data__label" for="name">
-                Возраст (лет):
-                <input id="name" class="data__input" type="text" required>
-              </label>
+              <label class="data__label" for="name">Возраст (лет):</label>
+              <input id="name" class="data__input" type="text" required>
             </li>
           </ul>
           <ul class="data__list">
             <li class="data__item">
               <label class="data__label" for="slim">
                 <input id="slim" class="data__input" type="radio" name="radio-group" value="slim" checked>
-                <span class="data__mask"></span>
+                <span class="data__mark"></span>
                 <span class="data__text">похудение</span>
               </label>
             </li>
             <li class="data__item">
               <label class="data__label" for="weight">
                 <input id="weight" class="data__input" type="radio" name="radio-group" value="weight">
-                <span class="data__mask"></span>
+                <span class="data__mark"></span>
                 <span class="data__text">Набор массы</span>
               </label>
             </li>
             <li class="data__item">
               <label class="data__label" for="advice">
                 <input id="advice" class="data__input" type="radio" name="radio-group" value="advice">
-                <span class="data__mask"></span>
+                <span class="data__mark"></span>
                 <span class="data__text">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="main-form__contact contact">
-          <h2 class="contact__title">Контактные данные (владельца кота)</h2>
-          <ul class="contact__list">
-            <li class="contact__item">
-              <label class="contact__label" for="email">
-                <input class="contact__input" id="email" type="email">
-              </label>
+        <fieldset class="main-form__owner owner">
+          <h2 class="owner__title">Контактные данные (владельца кота)</h2>
+          <ul class="owner__list">
+            <li class="owner__item">
+              <label class="owner__label" for="email">E-mail:*</label>
+              <input class="owner__input" id="email" type="email">
             </li>
-            <li class="contact__item">
-              <label class="contact__label" for="phone">
-                <input class="contact__input" id="phone" type="number">
-              </label>
+            <li class="owner__item">
+              <label class="owner__label" for="phone">Телефон:*</label>
+              <input class="owner__input" id="phone" type="number">
             </li>
           </ul>
         </fieldset>
         <fieldset class="main-form__comment comment">
           <legend class="comment__title">Комментарий</legend>
-          <div class="comment__content">
-            <label class="comment__label" for="comment">Расскажите обо всех повадках кота</label>
-            <textarea class="comment__area" id="comment" rows="4" cols="50"></textarea>
-          </div>
+          <textarea class="comment__area" id="comment" rows="4" cols="50" placeholder="Расскажите обо всех повАдках кота"></textarea>
         </fieldset>
         <fieldset class="main-form__additionally additionally">
           <legend class="additionally__title">Дополнительно</legend>
@@ -109,42 +99,47 @@
             <li class="additionally__item">
               <label class="additionally__label" for="sweetener">
                 <input id="sweetener" class="additionally__input" type="checkbox" name="sweetener" checked>
-                <span class="additionally__mask"></span>
+                <span class="additionally__mark"></span>
                 <span class="additionally__text">сахарозаменитель</span>
               </label>
             </li>
             <li class="additionally__item">
               <label class="additionally__label" for="water">
                 <input id="water" class="additionally__input" type="checkbox" name="water">
-                <span class="additionally__mask"></span>
+                <span class="additionally__mark"></span>
                 <span class="additionally__text">питьевая вода</span>
               </label>
             </li>
             <li class="additionally__item">
               <label class="additionally__label" for="milk">
                 <input id="milk" class="additionally__input" type="checkbox" name="milk">
-                <span class="additionally__mask"></span>
+                <span class="additionally__mark"></span>
                 <span class="additionally__text">молоко</span>
               </label>
             </li>
             <li class="additionally__item">
               <label class="additionally__label" for="vitamins">
                 <input id="vitamins" class="additionally__input" type="checkbox" name="vitamins">
-                <span class="additionally__mask"></span>
+                <span class="additionally__mark"></span>
                 <span class="additionally__text">витамины</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <div class="main-form__box">
-          <button class="main-form__button button">отправить заявку</button>
+          <button class="main-form__button button" type="submit">отправить заявку</button>
           <span class="main-form__description">* — Обязательные поля</span>
         </div>
       </form>
       <section class="page-form__contacts contacts">
-        <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-        <span class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span> <!--еще один тег сделать?-->
-        <div class="contacts__map"></div>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+          <address class="contacts__text">
+            <p class="contacts__text-street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__text-city">Санкт-Петербург</p>
+          </address>
+          <div class="contacts__map"></div>
+        </div>
       </section>
     </div>
   </main>

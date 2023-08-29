@@ -1,0 +1,23 @@
+.additional-goods {
+  &__title {
+    color: #000;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  &__subtitle {
+    color: #222222;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+  &__volume {
+    color: #444444;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  &__price {
+    color: #444444;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
