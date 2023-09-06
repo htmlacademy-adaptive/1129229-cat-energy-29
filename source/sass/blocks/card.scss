@@ -1,0 +1,29 @@
+.card {
+  &__title {
+    color: #222222;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  &--text {
+    color: #444444;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  &__title--show {
+    color: #111;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  &__description--show {
+    color: #444444;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &__link--show {
+    color: #444444;
+    background-color: #F2F2F2;
+  }
+}

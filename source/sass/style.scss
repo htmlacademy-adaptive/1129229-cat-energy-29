@@ -1,1 +1,18 @@
-// Начните писать стили здесь
+@use "./blocks/normalize.scss";
+@use "./blocks/common.scss";
+@use "./blocks/header.scss";
+@use "./blocks/site-list.scss";
+@use "./blocks/hero.scss";
+@use "./blocks/program.scss";
+@use "./blocks/advantages.scss";
+@use "./blocks/example.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/card.scss";
+@use "./blocks/additional-goods.scss";
+@use "./blocks/form.scss";
+@use "./blocks/data.scss";
+@use "./blocks/owner.scss";
+@use "./blocks/comment.scss";
+@use "./blocks/additionally.scss";
+@use "./blocks/footer.scss";

@@ -1,0 +1,20 @@
+.hero {
+  background: url("../../img/hero-background.png") no-repeat center center;
+  position: relative;
+  &__title {
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  &__description {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+  &__wrapper {
+    padding: 27px 20px 0 20px;
+  }
+}
