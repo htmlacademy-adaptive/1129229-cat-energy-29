@@ -1,4 +1,7 @@
 .example {
+  &__wrapper {
+    padding: 25px 20px 40px;
+  }
   &__title {
     color: #000;
     text-align: center;
