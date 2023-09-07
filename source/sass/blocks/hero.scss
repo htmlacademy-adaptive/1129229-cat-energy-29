@@ -1,11 +1,15 @@
 .hero {
   background: url("../../img/hero-background.png") no-repeat center center;
   position: relative;
+  &__wrapper {
+    padding: 0 20px;
+  }
   &__title {
     color: #FFF;
     text-align: center;
     font-size: 36px;
     line-height: 36px;
+    padding: 27px 0 25px 0;
   }
   &__description {
     color: #FFF;
@@ -13,8 +17,11 @@
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
+    padding-bottom: 29px;
   }
-  &__wrapper {
-    padding: 27px 20px 0 20px;
+  @media (min-width: $tablet-width) {
+    &__button {
+      width: 244px;
+    }
   }
 }

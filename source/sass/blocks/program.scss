@@ -1,6 +1,30 @@
 .program {
+  &__wrapper {
+    padding: 20px 20px 0;
+    @media (min-width:$tablet-width) {
+      padding: 0 30px;
+    }
+    @media (min-width:$desktop-width) {
+      width: 1220px;
+      padding: 0;
+      margin: 0 auto;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    @media (min-width:$desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
   &__item {
-    padding: 24px 20px 18px;
+    padding: 24px 0 18px;
+    margin-bottom: 20px;
+    background-color: #F2F2F2;
+    @media (min-width:$desktop-width) {
+      width: 540px;
+    }
   }
   &__title {
     color: #000;
@@ -23,7 +47,5 @@
     line-height: 16px;
     text-transform: uppercase;
   }
-  &__wrapper {
-    padding: 20px;
-  }
+
 }

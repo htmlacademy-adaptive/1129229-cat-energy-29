@@ -1,6 +1,9 @@
 .contacts {
   &__wrapper {
-    padding: 20px 26px;
+    padding: 26px 20px;
+    @media (min-width:$tablet-width) {
+      padding: 61px 70px;
+    }
   }
   &__title {
     color: #111;
