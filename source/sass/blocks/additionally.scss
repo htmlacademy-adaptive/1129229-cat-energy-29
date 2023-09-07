@@ -10,4 +10,15 @@
     line-height: 18px;
     text-transform: uppercase;
   }
+  &__list {
+    display: grid;
+    @media (min-width:$tablet-width) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px 123px;
+    }
+    @media (min-width:$desktop-width) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0 104px;
+    }
+  }
 }

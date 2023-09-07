@@ -1,8 +1,25 @@
 .data {
+  display: flex;
+  flex-direction: column;
   &__label {
     color: #444444;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+    margin-right: 13px;
+    white-space: nowrap;
+  }
+  &__item {
+    display: flex;
+  }
+  &__input {
+    width: 100%;
+  }
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    &__list {
+      width: 570px;
+    }
   }
 }

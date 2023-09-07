@@ -1,6 +1,27 @@
 .advantages {
   &__wrapper {
-    padding: 0 20px 49px;
+    padding: 0 20px;
+    @media (min-width:$tablet-width) {
+      padding: 0 30px;
+    }
+    @media (min-width:$desktop-width) {
+      width: 1220px;
+      padding: 0;
+      margin: 0 auto;
+    }
+  }
+  &__list {
+    display: grid;
+    @media (min-width:$tablet-width) {
+      grid-template-columns: repeat(2, 230px);
+      grid-template-rows: repeat(2, 280px);
+      gap: 37px 153px;
+    }
+    @media (min-width:$desktop-width) {
+      grid-template-columns: repeat(4, 230px);
+      grid-template-rows: 280px;
+      gap: 0 94px;
+    }
   }
   &__title {
     color: #000;
