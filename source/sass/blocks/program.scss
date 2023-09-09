@@ -1,13 +1,15 @@
 .program {
   &__wrapper {
-    padding: 20px 20px 0;
+    padding: 0 20px;
+    width: 320px;
+    margin: 0 auto;
     @media (min-width:$tablet-width) {
       padding: 0 30px;
+      width: 768px;
     }
     @media (min-width:$desktop-width) {
-      width: 1220px;
-      padding: 0;
-      margin: 0 auto;
+      width: 1440px;
+      padding: 0 110px;
     }
   }
   &__list {
@@ -19,11 +21,24 @@
     }
   }
   &__item {
-    padding: 24px 0 18px;
+    display: grid;
+    grid-template-columns: 70px 157px;
+    grid-template-rows: 50px 1fr 24px;
+    padding: 24px 20px 18px;
     margin-bottom: 20px;
     background-color: #F2F2F2;
+    @media (min-width:$tablet-width) {
+      grid-template-columns: 340px 200px;
+      grid-template-rows: 36px 1fr 38px;
+      gap: 0 53px;
+      padding: 77px 63px 53px 52px;
+    }
     @media (min-width:$desktop-width) {
-      width: 540px;
+      width: 570px;
+      grid-template-columns: 162px 295px;
+      grid-template-rows: 100px 1fr 38px;
+      gap: 0;
+      padding: 47px 61px 55px 52px;
     }
   }
   &__title {
@@ -32,20 +47,57 @@
     font-weight: 400;
     line-height: 37px;
     text-transform: uppercase;
+    align-self: center;
   }
   &__text {
     color: #444;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
+    grid-column: 1 / -1;
+    padding: 22px 0;
+    @media (min-width:$tablet-width) {
+      grid-column: 1;
+      padding: 24px 0 72px;
+    }
+    @media (min-width:$desktop-width) {
+      grid-column: 1 / -1;
+      padding: 24px 0 56px;
+    }
   }
   &__link {
     color: #000;
-    text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
     text-transform: uppercase;
+    grid-column: 1 / -1;
+    @media (min-width:$tablet-width) {
+      grid-column: 1;
+    }
+    @media (min-width:$desktop-width) {
+      grid-column: 1 / -1;
+    }
   }
-
+  &__image {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #68B738;
+    border-radius: 50%;
+    grid-column: 1;
+    @media (min-width:$tablet-width) {
+      width: 200px;
+      height: 200px;
+      grid-row: 1 / -1;
+      grid-column: 2;
+      align-self: center;
+    }
+    @media (min-width:$desktop-width) {
+      width: 100px;
+      height: 100px;
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
 }

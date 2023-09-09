@@ -1,13 +1,15 @@
 .advantages {
   &__wrapper {
     padding: 0 20px;
+    width: 320px;
+    margin: 0 auto;
     @media (min-width:$tablet-width) {
       padding: 0 30px;
+      width: 768px;
     }
     @media (min-width:$desktop-width) {
-      width: 1220px;
-      padding: 0;
-      margin: 0 auto;
+      width: 1440px;
+      padding: 0 110px;
     }
   }
   &__list {
@@ -27,6 +29,10 @@
     color: #000;
     font-size: 36px;
     line-height: 40px;
+    padding: 25px 0 40px;
+    @media (min-width:$tablet-width) {
+      padding: 45px 0 32px;
+    }
   }
   &__text {
     font-size: 14px;
