@@ -30,116 +30,116 @@
       </ul>
     </nav>
   </header>
-  <main class="page-form"> <!--поменять название?-->
+  <main class="page-form">
     <div class="page-form__wrapper">
       <h1 class="page-form__title">Подбор программы</h1>
-      <span class="page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</span>
-      <form class="main-form" action="">
-        <fieldset class="main-form__data data">
-          <legend class="visually-hidden">Информация о коте</legend>
-          <ul class="data__list">
-            <li class="data__item">
-              <label class="data__label" for="name">ИМЯ:*</label>
-              <input id="name" class="data__input" type="text" required>
-            </li>
-            <li class="data__item">
-              <label class="data__label" for="name">Вес (кг):*</label>
-              <input id="name" class="data__input" type="text" required>
-            </li>
-            <li class="data__item">
-              <label class="data__label" for="name">Возраст (лет):</label>
-              <input id="name" class="data__input" type="text" required>
-            </li>
-          </ul>
-          <ul class="data__list">
-            <li class="data__item">
-              <label class="data__label" for="slim">
-                <input id="slim" class="data__radio" type="radio" name="radio-group" value="slim" checked>
-                <span class="data__mark"></span>
-                <span class="data__text">похудение</span>
-              </label>
-            </li>
-            <li class="data__item">
-              <label class="data__label" for="weight">
-                <input id="weight" class="data__radio" type="radio" name="radio-group" value="weight">
-                <span class="data__mark"></span>
-                <span class="data__text">Набор массы</span>
-              </label>
-            </li>
-            <li class="data__item">
-              <label class="data__label" for="advice">
-                <input id="advice" class="data__radio" type="radio" name="radio-group" value="advice">
-                <span class="data__mark"></span>
-                <span class="data__text">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="main-form__owner owner">
-          <h2 class="owner__title">Контактные данные (владельца кота)</h2>
-          <ul class="owner__list">
-            <li class="owner__item">
-              <label class="owner__label" for="email">E-mail:*</label>
-              <input class="owner__input" id="email" type="email">
-            </li>
-            <li class="owner__item">
-              <label class="owner__label" for="phone">Телефон:*</label>
-              <input class="owner__input" id="phone" type="number">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="main-form__comment comment">
-          <legend class="comment__title">Комментарий</legend>
-          <textarea class="comment__area" id="comment" rows="4" cols="50" placeholder="Расскажите обо всех повАдках кота"></textarea>
-        </fieldset>
-        <fieldset class="main-form__additionally additionally">
-          <legend class="additionally__title">Дополнительно</legend>
-          <ul class="additionally__list">
-            <li class="additionally__item">
-              <label class="additionally__label" for="sweetener">
-                <input id="sweetener" class="additionally__input" type="checkbox" name="sweetener" checked>
-                <span class="additionally__mark"></span>
-                <span class="additionally__text">сахарозаменитель</span>
-              </label>
-            </li>
-            <li class="additionally__item">
-              <label class="additionally__label" for="water">
-                <input id="water" class="additionally__input" type="checkbox" name="water">
-                <span class="additionally__mark"></span>
-                <span class="additionally__text">питьевая вода</span>
-              </label>
-            </li>
-            <li class="additionally__item">
-              <label class="additionally__label" for="milk">
-                <input id="milk" class="additionally__input" type="checkbox" name="milk">
-                <span class="additionally__mark"></span>
-                <span class="additionally__text">молоко</span>
-              </label>
-            </li>
-            <li class="additionally__item">
-              <label class="additionally__label" for="vitamins">
-                <input id="vitamins" class="additionally__input" type="checkbox" name="vitamins">
-                <span class="additionally__mark"></span>
-                <span class="additionally__text">витамины</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="main-form__box">
-          <button class="main-form__button button" type="submit">отправить заявку</button>
-          <span class="main-form__description">* — Обязательные поля</span>
-        </div>
-      </form>
+      <p class="page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
-    <section class="page-form__contacts contacts">
+    <form class="page-form__form form" action="">
+      <fieldset class="form__data data">
+        <legend class="visually-hidden">Информация о коте</legend>
+        <ul class="data__list">
+          <li class="data__item">
+            <label class="data__label" for="name">ИМЯ:*</label>
+            <input id="name" class="data__input" type="text" required>
+          </li>
+          <li class="data__item">
+            <label class="data__label" for="name">Вес (кг):*</label>
+            <input id="name" class="data__input" type="text" required>
+          </li>
+          <li class="data__item">
+            <label class="data__label" for="name">Возраст (лет):</label>
+            <input id="name" class="data__input" type="text" required>
+          </li>
+        </ul>
+        <ul class="data__program">
+          <li class="data__item">
+            <label class="data__label" for="slim">
+              <input id="slim" class="data__radio" type="radio" name="radio-group" value="slim" checked>
+              <span class="data__mark"></span>
+              <span class="data__text">похудение</span>
+            </label>
+          </li>
+          <li class="data__item">
+            <label class="data__label" for="weight">
+              <input id="weight" class="data__radio" type="radio" name="radio-group" value="weight">
+              <span class="data__mark"></span>
+              <span class="data__text">Набор массы</span>
+            </label>
+          </li>
+          <li class="data__item">
+            <label class="data__label" for="advice">
+              <input id="advice" class="data__radio" type="radio" name="radio-group" value="advice">
+              <span class="data__mark"></span>
+              <span class="data__text">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__owner owner">
+        <h2 class="owner__title">Контактные данные (владельца кота)</h2>
+        <ul class="owner__list">
+          <li class="owner__item">
+            <label class="owner__label" for="email">E-mail:*</label>
+            <input class="owner__input" id="email" type="email">
+          </li>
+          <li class="owner__item">
+            <label class="owner__label" for="phone">Телефон:*</label>
+            <input class="owner__input" id="phone" type="number">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__comment comment">
+        <legend class="comment__title">Комментарий</legend>
+        <textarea class="comment__area" id="comment" rows="4" cols="50" placeholder="Расскажите обо всех повАдках кота"></textarea>
+      </fieldset>
+      <fieldset class="form__additionally additionally">
+        <legend class="additionally__title">Дополнительно</legend>
+        <ul class="additionally__list">
+          <li class="additionally__item">
+            <label class="additionally__label" for="sweetener">
+              <input id="sweetener" class="additionally__input" type="checkbox" name="sweetener" checked>
+              <span class="additionally__mark"></span>
+              <span class="additionally__text">сахарозаменитель</span>
+            </label>
+          </li>
+          <li class="additionally__item">
+            <label class="additionally__label" for="water">
+              <input id="water" class="additionally__input" type="checkbox" name="water">
+              <span class="additionally__mark"></span>
+              <span class="additionally__text">питьевая вода</span>
+            </label>
+          </li>
+          <li class="additionally__item">
+            <label class="additionally__label" for="milk">
+              <input id="milk" class="additionally__input" type="checkbox" name="milk">
+              <span class="additionally__mark"></span>
+              <span class="additionally__text">молоко</span>
+            </label>
+          </li>
+          <li class="additionally__item">
+            <label class="additionally__label" for="vitamins">
+              <input id="vitamins" class="additionally__input" type="checkbox" name="vitamins">
+              <span class="additionally__mark"></span>
+              <span class="additionally__text">витамины</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="form__box box">
+        <button class="box__button button" type="submit">отправить заявку</button>
+        <span class="box__description">* — Обязательные поля</span>
+      </div>
+    </form>
+    <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
         <address class="contacts__text">
-          <p class="contacts__text-street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__text-street">ул. Большая <br> Конюшенная, д. 19/8</p>
           <p class="contacts__text-city">Санкт-Петербург</p>
         </address>
-        <div class="contacts__map"></div>
       </div>
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.2601022348094!2d30.320726991539182!3d59.94058611542112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694432310479!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
   <footer class="footer">
