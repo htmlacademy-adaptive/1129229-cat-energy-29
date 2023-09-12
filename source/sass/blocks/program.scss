@@ -92,13 +92,13 @@
     }
   }
 
-  &__image {
-    display: block;
+  &__icon {
     width: 50px;
     height: 50px;
     background-color: #68b738;
     border-radius: 50%;
     grid-column: 1;
+    position: relative;
 
     @media (min-width: $tablet-width) {
       width: 200px;
@@ -113,6 +113,68 @@
       height: 100px;
       grid-column: 1;
       grid-row: 1;
+    }
+  }
+
+  &__icon--slim {
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../../img/program-slim.svg") no-repeat;
+      width: 36px;
+      height: 50px;
+      display: block;
+      top: -3px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        background-size: 140px;
+        width: 140px;
+        height: 194px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        background-size: 70px;
+        width: 70px;
+        height: 97px;
+      }
+    }
+  }
+
+  &__icon--pro {
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../../img/program-pro.svg") no-repeat;
+      width: 67px;
+      height: 28px;
+      display: block;
+      top: 10px;
+      left: -8px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        background-size: 268px;
+        width: 268px;
+        height: 112px;
+        top: 50%;
+        left: -17%;
+        transform: translate(0, -50%);
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        background-size: 134px;
+        width: 134px;
+        height: 56px;
+      }
     }
   }
 }

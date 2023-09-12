@@ -3,6 +3,10 @@
   padding: 0;
   margin: 0;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
   &__item {
     list-style: none;
   }
@@ -14,13 +18,13 @@
     line-height: 24px;
     text-transform: uppercase;
     text-decoration: none;
-  }
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-
-    &__link {
+    @media (min-width: $tablet-width) {
       padding: 10px 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
     }
   }
 }
