@@ -33,6 +33,10 @@
     }
   }
 
+  &__item {
+    list-style: none;
+  }
+
   &__title {
     color: #000000;
     font-size: 36px;
