@@ -1,23 +1,75 @@
 .additional-goods {
+  &__list {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 29px 29px 40px;
+    padding: 13px 0 19px;
+    border-bottom: 1px solid #cdcdcd;
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 1fr 181px 42px;
+      grid-template-rows: 45px 40px;
+      padding: 26px 0 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 2fr 2fr 1fr 1fr;
+      grid-template-rows: auto;
+      align-items: center;
+      padding: 26px 0 28px;
+    }
+  }
+
   &__title {
-    color: #000;
+    color: #000000;
     font-size: 24px;
     line-height: 24px;
+    padding: 25px 0 36px;
+    margin: 0;
+    border-bottom: 1px solid #cdcdcd;
   }
+
   &__subtitle {
     color: #222222;
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
+    margin: 0;
+    grid-column: 1 / -1;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1;
+    }
   }
+
   &__volume {
     color: #444444;
     font-size: 14px;
     line-height: 14px;
   }
+
   &__price {
     color: #444444;
     font-size: 14px;
     line-height: 14px;
+    text-align: right;
+
+    @media (min-width: $tablet-width) {
+      text-align: left;
+    }
+  }
+
+  &__button {
+    grid-column: 1 / -1;
+
+    @media (min-width: $desktop-width) {
+      grid-column: 4;
+    }
   }
 }

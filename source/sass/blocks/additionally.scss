@@ -1,24 +1,89 @@
 .additionally {
+  margin: 0 auto 34px;
+  border: none;
+  width: 320px;
+  padding: 0 20px;
+  display: grid;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 93px;
+    height: 2px;
+    background-color: #68b738;
+    top: 15px;
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto 52px;
+    padding: 0 30px;
+
+    &::before {
+      width: 188%;
+      height: 2px;
+      z-index: -1;
+      left: -44%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 70px;
+    margin: 0 auto 60px;
+
+    &::before {
+      width: 135%;
+      height: 2px;
+      z-index: -1;
+      left: -16%;
+      top: 15px;
+    }
+  }
+
   &__title {
-    color: #000;
+    color: #000000;
     font-size: 24px;
     line-height: 26px;
+    float: left;
+    margin-bottom: 34px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 40px;
+      background-color: #ffffff;
+      max-width: 252px;
+      margin-bottom: 57px;
+    }
   }
+
   &__text {
     color: #444444;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
   }
+
   &__list {
     display: grid;
-    @media (min-width:$tablet-width) {
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+
+    @media (min-width: $tablet-width) {
       grid-template-columns: repeat(2, 1fr);
       gap: 32px 123px;
+      padding: 0 40px;
     }
-    @media (min-width:$desktop-width) {
+
+    @media (min-width: $desktop-width) {
       grid-template-columns: repeat(4, 1fr);
       gap: 0 104px;
     }
+  }
+
+  &__item {
+    list-style: none;
   }
 }

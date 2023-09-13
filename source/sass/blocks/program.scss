@@ -1,51 +1,180 @@
 .program {
-  &__wrapper {
-    padding: 20px 20px 0;
-    @media (min-width:$tablet-width) {
-      padding: 0 30px;
-    }
-    @media (min-width:$desktop-width) {
-      width: 1220px;
-      padding: 0;
-      margin: 0 auto;
-    }
-  }
   &__list {
     display: flex;
     flex-direction: column;
-    @media (min-width:$desktop-width) {
+    padding: 0 20px;
+    width: 320px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 30px;
+      width: 768px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      padding: 0 110px;
       flex-direction: row;
       justify-content: space-between;
     }
   }
+
   &__item {
-    padding: 24px 0 18px;
+    display: grid;
+    grid-template-columns: 70px 157px;
+    grid-template-rows: 50px 1fr 24px;
+    padding: 24px 20px 18px;
     margin-bottom: 20px;
-    background-color: #F2F2F2;
-    @media (min-width:$desktop-width) {
-      width: 540px;
+    background-color: #f2f2f2;
+    list-style: none;
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 340px 200px;
+      grid-template-rows: 36px 1fr 38px;
+      gap: 0 53px;
+      padding: 77px 63px 53px 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 570px;
+      grid-template-columns: 162px 295px;
+      grid-template-rows: 100px 1fr 38px;
+      gap: 0;
+      padding: 47px 61px 55px 52px;
     }
   }
+
   &__title {
-    color: #000;
+    color: #000000;
     font-size: 24px;
     font-weight: 400;
     line-height: 37px;
     text-transform: uppercase;
+    align-self: center;
+    margin: 0;
   }
+
   &__text {
-    color: #444;
+    color: #444444;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 22px 0;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1;
+      padding: 24px 0 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / -1;
+      padding: 24px 0 56px;
+    }
   }
+
   &__link {
-    color: #000;
-    text-align: center;
+    color: #000000;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
     text-transform: uppercase;
+    grid-column: 1 / -1;
+    text-decoration: none;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / -1;
+    }
   }
 
+  &__icon {
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
+    grid-column: 1;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      grid-row: 1 / -1;
+      grid-column: 2;
+      align-self: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+
+  &__icon--slim {
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../../img/program-slim.svg") no-repeat;
+      width: 36px;
+      height: 50px;
+      display: block;
+      top: -3px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        background-size: 140px;
+        width: 140px;
+        height: 194px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        background-size: 70px;
+        width: 70px;
+        height: 97px;
+      }
+    }
+  }
+
+  &__icon--pro {
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../../img/program-pro.svg") no-repeat;
+      width: 67px;
+      height: 28px;
+      display: block;
+      top: 10px;
+      left: -8px;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        background-size: 268px;
+        width: 268px;
+        height: 112px;
+        top: 50%;
+        left: -17%;
+        transform: translate(0, -50%);
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        background-size: 134px;
+        width: 134px;
+        height: 56px;
+      }
+    }
+  }
 }

@@ -1,17 +1,30 @@
 .site-list {
   display: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
   &__link {
-    color: #000;
+    color: #000000;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
-  }
-  @media(min-width: $tablet-width) {
-    display: flex;
-    &__link {
+    text-decoration: none;
+
+    @media (min-width: $tablet-width) {
       padding: 10px 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
     }
   }
 }
-

@@ -1,27 +1,102 @@
 .hero {
-  background: url("../../img/hero-background.png") no-repeat center center;
+  background: url("../../img/hero-background-mobile.jpg") top center no-repeat;
+  padding: 0 20px;
+  width: 320px;
+  margin: 0 auto;
   position: relative;
-  &__wrapper {
-    padding: 0 20px;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/hero-background-mobile@2x.jpg") top center no-repeat;
+    background-size: 320px auto;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    width: 768px;
+    background: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 224px 110px 0;
+    background: url("../../img/hero-background-desktop.jpg") center right no-repeat;
+    min-height: 694px;
+    margin-bottom: 82px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/hero-background-desktop@2x.jpg") top right no-repeat;
+    }
+  }
+
   &__title {
-    color: #FFF;
+    margin: 0;
+    color: #ffffff;
     text-align: center;
     font-size: 36px;
     line-height: 36px;
-    padding: 27px 0 25px 0;
+    padding: 27px 0 25px;
+
+    @media (min-width: $tablet-width) {
+      text-align: left;
+      padding: 65px 0 45px 90px;
+      color: #000000;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 0 40px 80px;
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
+
   &__description {
-    color: #FFF;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
     text-align: center;
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
     padding-bottom: 29px;
+
+    @media (min-width: $tablet-width) {
+      text-align: left;
+      padding: 0 0 0 90px;
+      color: #000000;
+      margin-bottom: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 0 0 80px;
+      margin-bottom: 52px;
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
-  @media (min-width: $tablet-width) {
-    &__button {
+
+  &__picture {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 143px;
+      left: 50%;
+      transform: translate(-29%);
+    }
+  }
+
+  &__button {
+    @media (min-width: $tablet-width) {
       width: 244px;
+      position: absolute;
+      left: 120px;
+      top: 250px;
+      padding: 17px 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-left: 80px;
     }
   }
 }

@@ -1,13 +1,90 @@
 .owner {
+  padding: 26px 20px 24px;
+  border: none;
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 93px;
+    height: 2px;
+    background-color: #68b738;
+    top: 40px;
+    right: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    padding: 26px 30px 24px;
+
+    &::before {
+      width: 188%;
+      left: -44%;
+      top: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 0 70px;
+
+    &::before {
+      width: 135%;
+      left: -16%;
+      top: 13px;
+    }
+  }
+
   &__title {
-    color: #000;
+    color: #000000;
     font-size: 24px;
     line-height: 26px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 40px;
+      max-width: 512px;
+      background-color: #ffffff;
+    }
   }
+
   &__label {
     color: #444444;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+    margin-right: 13px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 14px;
+    margin-top: 35px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 569px 572px;
+      gap: 81px;
+      margin: 76px 0 70px;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    display: flex;
+  }
+
+  &__input {
+    width: 100%;
   }
 }
