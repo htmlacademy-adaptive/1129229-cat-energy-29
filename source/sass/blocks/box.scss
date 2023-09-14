@@ -11,6 +11,7 @@
     padding: 0 70px;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +25,7 @@
   }
 
   &__description {
+    font-family: "Lato", sans-serif;
     color: #000000;
     text-align: center;
     font-size: 14px;

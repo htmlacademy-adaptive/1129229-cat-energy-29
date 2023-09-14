@@ -99,9 +99,9 @@
     &::before {
       content: "";
       position: absolute;
-      width: 32px;
+      width: 22px;
       height: 12px;
-      background: url("../../img/icon/arrow.svg") center center no-repeat;
+      background: url("../../img/icon/arrow.svg") right center no-repeat;
       left: 99px;
       top: 2px;
     }
@@ -120,6 +120,18 @@
 
     @media (min-width: $desktop-width) {
       grid-column: 1 / -1;
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        width: 32px;
+        background-position: center center;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 

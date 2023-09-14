@@ -1,5 +1,10 @@
 .page-form {
   margin-top: 27px;
+  overflow-x: hidden;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 
   &__wrapper {
     width: 320px;
@@ -29,6 +34,7 @@
       font-size: 60px;
       line-height: 60px;
       padding: 0 40px;
+      margin: 0 0 56px;
     }
   }
 

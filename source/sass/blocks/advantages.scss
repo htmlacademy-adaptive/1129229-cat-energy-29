@@ -53,11 +53,14 @@
     color: #000000;
     font-size: 36px;
     line-height: 40px;
+    font-weight: 400;
     padding: 25px 0 40px;
     margin: 0;
 
     @media (min-width: $tablet-width) {
       padding: 45px 0 72px;
+      font-size: 60px;
+      line-height: 60px;
     }
   }
 

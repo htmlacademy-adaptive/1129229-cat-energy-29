@@ -36,6 +36,16 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   &__picture {
