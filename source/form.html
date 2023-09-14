@@ -9,31 +9,37 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img src="" alt="Логотип">
-    </a>
-    <nav class="main-header__nav main-nav">
-      <button class="main-nav__burger" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-        <span class="main-nav__line"></span>
-      </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link" href="index.html">главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="catalog.html">каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+        <picture class="main-header__logo-picture">
+          <source media="(min-width: 768px)" srcset="./img/icon/logo-pic.svg">
+          <img class="main-header__logo-image" src="./img/icon/logo-pic-mobile.svg" width="33px" height="38px" alt="Логотип кот">
+        </picture>
+        <img class="main-header__logo-image" src="./img/icon/logo-cat-energy.svg" width="101px" height="18px" alt="Логотип cat energy">
+      </a>
+      <nav class="main-header__nav main-nav">
+        <button class="main-nav__burger" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <span class="main-nav__line"></span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--black" href="index.html">главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--black" href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--black site-list__link--active" href="form.html">подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="page-form">
     <div class="page-form__wrapper">
       <h1 class="page-form__title">Подбор программы</h1>
-      <p class="page-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="page-form__text">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
     </div>
     <form class="page-form__form form" action="">
       <fieldset class="form__data data">
@@ -41,36 +47,36 @@
         <ul class="data__list">
           <li class="data__item">
             <label class="data__label" for="name">ИМЯ:*</label>
-            <input id="name" class="data__input" type="text" required>
+            <input id="name" class="data__input" type="text" value="Барсик" required>
           </li>
           <li class="data__item">
             <label class="data__label" for="name">Вес (кг):*</label>
-            <input id="name" class="data__input" type="text" required>
+            <input id="name" class="data__input" type="text" value="7" required>
           </li>
           <li class="data__item">
             <label class="data__label" for="name">Возраст (лет):</label>
-            <input id="name" class="data__input" type="text" required>
+            <input id="name" class="data__input" type="text" value="7" required>
           </li>
         </ul>
         <ul class="data__program">
           <li class="data__item">
             <label class="data__label" for="slim">
-              <input id="slim" class="data__radio" type="radio" name="radio-group" value="slim" checked>
-              <span class="data__mark"></span>
+              <input id="slim" class="data__radio visually-hidden" type="radio" name="radio-group" value="slim" checked>
+              <span class="data__mask"></span>
               <span class="data__text">похудение</span>
             </label>
           </li>
           <li class="data__item">
             <label class="data__label" for="weight">
-              <input id="weight" class="data__radio" type="radio" name="radio-group" value="weight">
-              <span class="data__mark"></span>
+              <input id="weight" class="data__radio visually-hidden" type="radio" name="radio-group" value="weight">
+              <span class="data__mask"></span>
               <span class="data__text">Набор массы</span>
             </label>
           </li>
           <li class="data__item">
             <label class="data__label" for="advice">
-              <input id="advice" class="data__radio" type="radio" name="radio-group" value="advice">
-              <span class="data__mark"></span>
+              <input id="advice" class="data__radio visually-hidden" type="radio" name="radio-group" value="advice">
+              <span class="data__mask"></span>
               <span class="data__text">Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
@@ -81,11 +87,11 @@
         <ul class="owner__list">
           <li class="owner__item">
             <label class="owner__label" for="email">E-mail:*</label>
-            <input class="owner__input" id="email" type="email">
+            <input class="owner__input owner__input--email" id="email" type="email" value="kuklachev@gmail.com">
           </li>
           <li class="owner__item">
             <label class="owner__label" for="phone">Телефон:*</label>
-            <input class="owner__input" id="phone" type="number">
+            <input class="owner__input owner__input--phone" id="phone" type="tel" value="8 (960) 900-60-90">
           </li>
         </ul>
       </fieldset>
@@ -144,29 +150,29 @@
     </section>
   </main>
   <footer class="footer">
-    <a href="" class="footer__logo">
-      <img src="" alt="">
+    <a href="index.html" class="footer__logo">
+      <img class="footer__logo-image" src="./img/icon/logo-cat-energy.svg" width="128px" height="24px" alt="Логотип cat energy">
     </a>
     <ul class="footer__social social-list">
       <li class="social-list__item">
-        <a href="social-list__link social-list__link--vk">
+        <a class="social-list__link social-list__link--vk" href="#">
           <span class="visually-hidden">VK</span>
         </a>
       </li>
       <li class="social-list__item">
-        <a href="social-list__link social-list__link--youtube">
+        <a class="social-list__link social-list__link--youtube" href="#">
           <span class="visually-hidden">YouTube</span>
         </a>
       </li>
       <li class="social-list__item">
-        <a href="social-list__link social-list__link--telegram">
+        <a class="social-list__link social-list__link--telegram" href="#">
           <span class="visually-hidden">Telegtam</span>
         </a>
       </li>
     </ul>
-    <a href="" class="footer__academy">
-      <img src="" alt="">
-      <span class="visually-hidden">HTML Academy</span>
+    <a href="#" class="footer__academy">
+      <p class="footer__academy-text">HTML Academy</p>
+      <img class="footer__academy-icon" src="./img/icon/logo-html-academy.svg" alt="HTML Academy">
     </a>
   </footer>
 </body>

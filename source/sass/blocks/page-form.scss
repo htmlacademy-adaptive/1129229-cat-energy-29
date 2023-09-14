@@ -1,4 +1,6 @@
 .page-form {
+  margin-top: 27px;
+
   &__wrapper {
     width: 320px;
     padding: 0 20px;
@@ -12,15 +14,16 @@
     @media (min-width: $desktop-width) {
       width: 1440px;
       margin: 0 auto;
-      padding: 0 70px;
+      padding: 188px 70px 0;
     }
   }
 
   &__title {
-    margin: 27px 0 37px;
+    margin: 0 0 37px;
     color: #000000;
     font-size: 36px;
     line-height: 36px;
+    font-weight: 400;
 
     @media (min-width: $tablet-width) {
       font-size: 60px;
@@ -30,19 +33,22 @@
   }
 
   &__text {
-    width: 300px;
     margin: 0;
+    color: #000000;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
 
     @media (min-width: $tablet-width) {
-      width: 768px;
-      margin: 0 auto;
       padding: 26px 30px 24px;
+      font-size: 20px;
+      line-height: 30px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 1440px;
-      margin: 0 auto;
-      padding: 0 70px;
+      padding: 0 40px;
+      margin-bottom: 66px;
     }
   }
 }

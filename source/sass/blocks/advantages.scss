@@ -1,4 +1,6 @@
 .advantages {
+  margin-bottom: 49px;
+
   &__wrapper {
     padding: 0 20px;
     width: 320px;
@@ -27,7 +29,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: repeat(4, 230px);
+      grid-template-columns: 230px 246px 248px 250px;
       grid-template-rows: 280px;
       gap: 0 94px;
     }
@@ -35,6 +37,16 @@
 
   &__item {
     list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -45,14 +57,120 @@
     margin: 0;
 
     @media (min-width: $tablet-width) {
-      padding: 45px 0 32px;
+      padding: 45px 0 72px;
+    }
+  }
+
+  &__icon {
+    margin-right: 20px;
+    min-width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin: 0 0 31px 0;
     }
   }
 
   &__text {
+    font-family: "Lato", sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: #444444;
     margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__item--one {
+    @media (min-width: $tablet-width) {
+      background: url("../../img/index/advantages-content-1.png") no-repeat;
+      background-position: 76% 0;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../../img/index/advantages-content-1@2x.png") no-repeat;
+        background-size: 71px auto;
+        background-position: 76% 0;
+      }
+    }
+  }
+
+  &__item--two {
+    @media (min-width: $tablet-width) {
+      background: url("../../img/index/advantages-content-2.png") top right no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../../img/index/advantages-content-2@2x.png") top right no-repeat;
+        background-size: 113px auto;
+      }
+    }
+  }
+
+  &__item--three {
+    @media (min-width: $tablet-width) {
+      background: url("../../img/index/advantages-content-3.png") top right no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../../img/index/advantages-content-3@2x.png") top right no-repeat;
+        background-size: 112px auto;
+      }
+    }
+  }
+
+  &__item--four {
+    @media (min-width: $tablet-width) {
+      background: url("../../img/index/advantages-content-4.png") top right no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../../img/index/advantages-content-4@2x.png") top right no-repeat;
+        background-size: 121px auto;
+      }
+    }
+  }
+
+  &__icon--nutrition {
+    &::before {
+      background: url("../../img/icon/advantages-nutrition.svg") center center no-repeat;
+      width: 24.8px;
+      height: 28px;
+    }
+  }
+
+  &__icon--powder {
+    &::before {
+      background: url("../../img/icon/advantages-powder.svg") center center no-repeat;
+      width: 26px;
+      height: 28.5px;
+    }
+  }
+
+  &__icon--eat {
+    &::before {
+      background: url("../../img/icon/advantages-eat.svg") center center no-repeat;
+      width: 25px;
+      height: 30px;
+    }
+  }
+
+  &__icon--watch {
+    &::before {
+      background: url("../../img/icon/advantages-watch.svg") center center no-repeat;
+      width: 26px;
+      height: 31px;
+    }
   }
 }

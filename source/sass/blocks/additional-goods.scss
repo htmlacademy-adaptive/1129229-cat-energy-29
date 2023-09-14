@@ -1,7 +1,22 @@
 .additional-goods {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    grid-template-rows: 36px 288px;
+    gap: 80px;
+  }
+
   &__list {
     padding: 0;
-    margin: 0;
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
   }
 
   &__item {
@@ -22,7 +37,7 @@
       grid-template-columns: 2fr 2fr 1fr 1fr;
       grid-template-rows: auto;
       align-items: center;
-      padding: 26px 0 28px;
+      padding: 15px 0 16px;
     }
   }
 
@@ -30,31 +45,81 @@
     color: #000000;
     font-size: 24px;
     line-height: 24px;
+    font-weight: 400;
     padding: 25px 0 36px;
     margin: 0;
     border-bottom: 1px solid #cdcdcd;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 54px;
+      height: 2px;
+      background-color: #68b738;
+      top: 25px;
+      right: -20px;
+      z-index: -1;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 80px;
+      border: none;
+      background-color: #ffffff;
+      max-width: 419px;
+      padding: 0 40px;
+
+      &::before {
+        width: 384%;
+        left: -100%;
+        top: 25px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / -1;
+      margin-bottom: 0;
+
+      &::before {
+        width: 520%;
+        left: -96%;
+        top: 23px;
+      }
+    }
   }
 
   &__subtitle {
     color: #222222;
     font-size: 16px;
     line-height: 16px;
+    font-weight: 400;
     text-transform: uppercase;
     margin: 0;
     grid-column: 1 / -1;
 
     @media (min-width: $tablet-width) {
       grid-column: 1;
+      font-size: 20px;
+      line-height: 20px;
     }
   }
 
   &__volume {
+    font-family: "Lato", sans-serif;
     color: #444444;
     font-size: 14px;
     line-height: 14px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &__price {
+    font-family: "Lato", sans-serif;
     color: #444444;
     font-size: 14px;
     line-height: 14px;
@@ -62,6 +127,8 @@
 
     @media (min-width: $tablet-width) {
       text-align: left;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 
@@ -70,6 +137,91 @@
 
     @media (min-width: $desktop-width) {
       grid-column: 4;
+    }
+  }
+
+  &__aside {
+    background: url("../../img/catalog/mobile/cat-prize-mob.jpg") center center no-repeat;
+    padding: 59px 61px 43px 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/catalog/mobile/cat-prize-mob@2x.jpg") center center no-repeat;
+      background-size: 279px auto;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(104, 183, 56, 0.85);
+    }
+
+    @media (min-width: $tablet-width) {
+      background: url("../../img/catalog/tablet/cat-prize-tab.jpg") center center no-repeat;
+      padding: 54px 125px 66px 77px;
+      flex-direction: row;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../../img/catalog/mobile/cat-prize-tab@2x.jpg") center center no-repeat;
+        background-size: 707px auto;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      background: url("../../img/catalog/desktop/cat-prize-desk.jpg");
+      flex-direction: column;
+      padding: 56px 42px 43px;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../../img/catalog/desktop/cat-prize-desk@2x.jpg") center center no-repeat;
+        background-size: 245px auto;
+      }
+    }
+  }
+
+  &__aside-icon {
+    display: block;
+    width: 78px;
+    height: 80px;
+    background: url("../../img/icon/gift.svg");
+    margin-bottom: 48px;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 46px;
+    }
+  }
+
+  &__aside-text {
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      width: 161px;
+      margin-left: auto;
+      text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: center;
+      margin-left: 0;
     }
   }
 }
