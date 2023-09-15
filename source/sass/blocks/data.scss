@@ -151,7 +151,11 @@
     }
   }
 
-  &__radio[disabled] ~ &__mask, &__radio[disabled] ~ &__text {
+  &__radio[disabled] ~ &__mask {
+    opacity: 0.3;
+  }
+
+  &__radio[disabled] ~ &__text {
     opacity: 0.3;
   }
 

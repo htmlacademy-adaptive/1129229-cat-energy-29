@@ -122,12 +122,10 @@
       grid-column: 1 / -1;
     }
 
-    &:hover,
-    &:focus {
-      &::before {
-        width: 32px;
-        background-position: center center;
-      }
+    &:hover::before,
+    &:focus::before {
+      width: 32px;
+      background-position: center center;
     }
 
     &:active {
