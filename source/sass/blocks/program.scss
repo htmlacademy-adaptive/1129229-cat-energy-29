@@ -101,7 +101,8 @@
       position: absolute;
       width: 22px;
       height: 12px;
-      background: url("../../img/icon/arrow.svg") right center no-repeat;
+      background-image: url("../../img/icon/stak.svg#arrow");
+      background-repeat: no-repeat;
       left: 99px;
       top: 2px;
     }
@@ -161,7 +162,8 @@
     &::before {
       content: "";
       position: absolute;
-      background: url("../../img/icon/program-slim.svg") no-repeat;
+      background-image: url("../../img/icon/stak.svg#program-slim");
+      background-repeat: no-repeat;
       width: 36px;
       height: 50px;
       display: block;
@@ -191,7 +193,8 @@
     &::before {
       content: "";
       position: absolute;
-      background: url("../../img/icon/program-pro.svg") no-repeat;
+      background-image: url("../../img/icon/stak.svg#program-pro");
+      background-repeat: no-repeat;
       width: 67px;
       height: 28px;
       display: block;

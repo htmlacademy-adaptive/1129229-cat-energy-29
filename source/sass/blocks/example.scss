@@ -182,7 +182,8 @@
     &::before {
       content: "";
       position: absolute;
-      background: url("../../img/icon/thumb.svg") center center no-repeat;
+      background-image: url("../../img/icon/stak.svg#thumb");
+      background-repeat: no-repeat;
       width: 40px;
       height: 40px;
       top: 50%;

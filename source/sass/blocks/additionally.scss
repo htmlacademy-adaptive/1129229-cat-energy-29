@@ -119,7 +119,8 @@
   &__input[type="checkbox"]:checked + &__mark::before {
     content: "";
     position: absolute;
-    background: url("../../img/icon/check-mark.svg") center center no-repeat;
+    background-image: url("../../img/icon/stak.svg#check-mark");
+    background-repeat: no-repeat;
     width: 24px;
     height: 19px;
     top: 50%;
