@@ -51,7 +51,7 @@
     line-height: 37px;
     text-transform: uppercase;
     align-self: center;
-    margin: 0;
+    margin: 0 0 2px;
 
     @media (min-width: $tablet-width) {
       font-size: 36px;
@@ -94,7 +94,7 @@
     grid-column: 1 / -1;
     text-decoration: none;
     position: relative;
-    margin-top: 15px;
+    margin-top: 20px;
 
     &::before {
       content: "";
@@ -103,8 +103,8 @@
       height: 12px;
       background-image: url("../../img/icon/stak.svg#arrow");
       background-repeat: no-repeat;
-      left: 99px;
-      top: 2px;
+      left: 102px;
+      top: 1px;
     }
 
     @media (min-width: $tablet-width) {
@@ -198,8 +198,8 @@
       width: 67px;
       height: 28px;
       display: block;
-      top: 10px;
-      left: -8px;
+      top: 12px;
+      left: -7px;
     }
 
     @media (min-width: $tablet-width) {

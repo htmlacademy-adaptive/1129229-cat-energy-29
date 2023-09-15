@@ -1,11 +1,11 @@
 .owner {
-  padding: 26px 20px 24px;
+  padding: 26px 17px 26px;
   border: none;
   position: relative;
   width: 320px;
   margin: 0 auto;
   display: grid;
-  gap: 35px;
+  gap: 36px;
 
   &::before {
     content: "";
@@ -13,7 +13,7 @@
     width: 93px;
     height: 2px;
     background-color: #68b738;
-    top: 40px;
+    top: 42px;
     right: 0;
     z-index: -1;
   }
@@ -64,7 +64,8 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    margin-right: 13px;
+    margin-right: 14px;
+    margin-left: 2px;
     white-space: nowrap;
     font-weight: 400;
     position: relative;
@@ -81,7 +82,7 @@
     margin: 0;
     padding: 0;
     display: grid;
-    gap: 14px;
+    gap: 15px;
 
     @media (min-width: $tablet-width) {
       padding: 0 40px;
@@ -103,7 +104,7 @@
   &__input {
     font-family: "Oswald", sans-serif;
     width: 100%;
-    padding: 14px 15px 13px;
+    padding: 11px 15px 8px;
     border: none;
     outline: 1px solid #e7e7e7;
     color: #444444;
@@ -133,9 +134,9 @@
     &::before {
       content: "";
       position: absolute;
-      top: 48%;
+      top: 50%;
       transform: translate(0, -50%);
-      right: 12px;
+      right: 16px;
       width: 20px;
       height: 20px;
       mask-image: url("../../img/icon/stak.svg#email");
@@ -151,9 +152,9 @@
     &::before {
       content: "";
       position: absolute;
-      top: 50%;
+      top: 54%;
       transform: translate(0, -50%);
-      right: 12px;
+      right: 17px;
       width: 20px;
       height: 20px;
       mask-image: url("../../img/icon/stak.svg#phone");

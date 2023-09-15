@@ -12,7 +12,7 @@
   }
 
   &__wrapper {
-    padding: 26px 20px;
+    padding: 27px 20px 26px;
     display: flex;
     justify-content: space-between;
     background-color: #ffffff;
@@ -93,8 +93,8 @@
       width: 57px;
       height: 53px;
       background: url("../../img/index/map-pin.png") center center no-repeat;
-      top: 47%;
-      left: 50%;
+      top: 46%;
+      left: 51%;
       transform: translate(-50%, -50%);
       background-size: 57px;
     }

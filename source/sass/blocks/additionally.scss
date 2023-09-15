@@ -1,5 +1,5 @@
 .additionally {
-  margin: 0 auto 34px;
+  margin: 0 auto 28px;
   border: none;
   width: 320px;
   padding: 0 20px;
@@ -9,7 +9,7 @@
   &::before {
     content: "";
     position: absolute;
-    width: 93px;
+    width: 140px;
     height: 2px;
     background-color: #68b738;
     top: 15px;
@@ -50,7 +50,8 @@
     line-height: 26px;
     float: left;
     font-weight: 400;
-    margin-bottom: 34px;
+    margin-bottom: 40px;
+    margin-left: -3px;
 
     @media (min-width: $tablet-width) {
       padding: 0 40px;
@@ -67,7 +68,8 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    padding-left: 45px;
+    padding-left: 44px;
+    margin-bottom: 10px;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -101,14 +103,20 @@
   &__label {
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   &__mark {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    top: -5px;
+    width: 28px;
+    height: 28px;
     background-color: #ffffff;
     outline: 1px solid #cdcdcd;
+
+    &:last-child {
+      top: -7px;
+    }
 
     @media (min-width: $tablet-width) {
       width: 40px;
@@ -121,10 +129,10 @@
     position: absolute;
     background-image: url("../../img/icon/stak.svg#check-mark");
     background-repeat: no-repeat;
-    width: 24px;
+    width: 19px;
     height: 19px;
-    top: 50%;
-    left: 50%;
+    top: 42%;
+    left: 42%;
     transform: translate(-50%, -50%);
   }
 }

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 55px 69px 40px;
-  padding: 20px 20px 25px;
+  padding: 20px 20px 24px;
   border-top: 1px solid #ebebeb;
 
   &:last-child {
@@ -33,6 +33,7 @@
     background-color: #ffffff;
     position: relative;
     border-bottom: 1px solid #ebebeb;
+    padding: 26px 20px 23px;
 
     @media (min-width: $tablet-width) {
       border: 2px solid #f2f2f2;
@@ -80,7 +81,7 @@
   &__title {
     color: #222222;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 21px;
     text-transform: uppercase;
     font-weight: 400;
     margin: 0;
@@ -179,6 +180,7 @@
 
   &__image {
     display: block;
+    margin-bottom: 16px;
   }
 
   &__plus {
