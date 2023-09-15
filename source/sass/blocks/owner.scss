@@ -138,7 +138,9 @@
       right: 12px;
       width: 20px;
       height: 20px;
-      background: url("../../img/icon/email.svg") center center no-repeat;
+      mask-image: url("../../img/icon/stak.svg#email");
+      background-color: #000000;
+      background-repeat: no-repeat;
       z-index: 2;
     }
   }
@@ -154,7 +156,9 @@
       right: 12px;
       width: 20px;
       height: 20px;
-      background: url("../../img/icon/phone.svg") center center no-repeat;
+      mask-image: url("../../img/icon/stak.svg#phone");
+      background-color: #000000;
+      background-repeat: no-repeat;
       z-index: 2;
     }
   }

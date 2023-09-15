@@ -147,7 +147,8 @@
 
   &__icon--nutrition {
     &::before {
-      background: url("../../img/icon/advantages-nutrition.svg") center center no-repeat;
+      background-image: url("../../img/icon/stak.svg#nutrition");
+      background-repeat: no-repeat;
       width: 24.8px;
       height: 28px;
     }
@@ -155,7 +156,8 @@
 
   &__icon--powder {
     &::before {
-      background: url("../../img/icon/advantages-powder.svg") center center no-repeat;
+      background-image: url("../../img/icon/stak.svg#powder");
+      background-repeat: no-repeat;
       width: 26px;
       height: 28.5px;
     }
@@ -163,7 +165,8 @@
 
   &__icon--eat {
     &::before {
-      background: url("../../img/icon/advantages-eat.svg") center center no-repeat;
+      background-image: url("../../img/icon/stak.svg#eat");
+      background-repeat: no-repeat;
       width: 25px;
       height: 30px;
     }
@@ -171,7 +174,8 @@
 
   &__icon--watch {
     &::before {
-      background: url("../../img/icon/advantages-watch.svg") center center no-repeat;
+      background-image: url("../../img/icon/stak.svg#watch");
+      background-repeat: no-repeat;
       width: 26px;
       height: 31px;
     }
