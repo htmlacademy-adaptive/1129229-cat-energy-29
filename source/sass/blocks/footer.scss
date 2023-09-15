@@ -1,3 +1,69 @@
 .footer {
-  padding: 20px 40px;
+  padding: 20px;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 768px;
+    padding: 36.5px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 47.5px 110px;
+  }
+
+  &__logo {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      width: auto;
+    }
+  }
+
+  &__logo-image {
+    display: block;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+
+  &__academy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 20px 0;
+    border-top: 1px solid #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      width: auto;
+      justify-content: baseline;
+    }
+  }
+
+  &__academy-text {
+    color: #444444;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 23px;
+    }
+  }
 }

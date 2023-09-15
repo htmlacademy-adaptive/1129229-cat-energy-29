@@ -1,4 +1,15 @@
 .form {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 79px;
+  }
+
+
   &__title {
     color: #000000;
     font-size: 36px;
