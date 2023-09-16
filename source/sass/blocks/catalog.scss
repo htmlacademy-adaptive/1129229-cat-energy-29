@@ -30,7 +30,7 @@
     margin: 0 auto;
 
     @media (min-width: $tablet-width) {
-      padding: 67px 30px 84px;
+      padding: 59px 30px 86px;
       width: 768px;
       border: none;
       font-size: 60px;
@@ -54,7 +54,7 @@
       width: 768px;
       grid-template-columns: repeat(2, 1fr);
       gap: 60px;
-      margin-bottom: 70px;
+      margin-bottom: 68px;
     }
 
     @media (min-width: $desktop-width) {

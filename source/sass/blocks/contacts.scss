@@ -18,7 +18,7 @@
     background-color: #ffffff;
 
     @media (min-width: $tablet-width) {
-      padding: 61px 70px;
+      padding: 59px 70px;
     }
 
     @media (min-width: $desktop-width) {
@@ -44,6 +44,7 @@
       width: 163px;
       font-size: 20px;
       line-height: 26px;
+      margin-top: 2px;
     }
   }
 
@@ -118,6 +119,8 @@
         width: 113px;
         height: 106px;
         background-size: 113px 106px;
+        top: 50%;
+        left: 50.6%;
       }
 
       @media (min-resolution: 2dppx) {

@@ -85,7 +85,8 @@
     gap: 15px;
 
     @media (min-width: $tablet-width) {
-      padding: 0 40px;
+      padding: 0 38px;
+      gap: 20px;
     }
 
     @media (min-width: $desktop-width) {
@@ -152,11 +153,11 @@
     &::before {
       content: "";
       position: absolute;
-      top: 54%;
+      top: 50%;
       transform: translate(0, -50%);
-      right: 17px;
+      right: 16px;
       width: 20px;
-      height: 20px;
+      height: 25px;
       mask-image: url("../../img/icon/stak.svg#phone");
       background-color: #000000;
       background-repeat: no-repeat;

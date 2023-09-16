@@ -9,8 +9,8 @@
     width: 768px;
     margin: 0 auto;
     padding: 0 70px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    grid-template-columns: 284px 176px;
+    gap: 59px;
     align-items: center;
   }
 
@@ -22,6 +22,12 @@
 
   &__button {
     max-width: 570px;
+
+    @media (min-width: $tablet-width) {
+      padding: 13px 10px;
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 
   &__description {
@@ -31,5 +37,11 @@
     font-size: 14px;
     line-height: 16px;
     margin-left: -2px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 5px;
+    }
   }
 }

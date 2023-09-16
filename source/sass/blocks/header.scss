@@ -48,31 +48,29 @@
     }
   }
 
-  &__picture {
-    margin-right: 56px;
-
-    @media (min-width: $tablet-width) {
-      margin-right: 14px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-right: 13px;
-    }
-  }
-
-  &__logo-image {
-    margin-right: 56px;
+  &__logo-icon {
+    width: 33px;
+    height: 38px;
 
     @media (min-width: $tablet-width) {
       width: 60px;
       height: 50px;
-      margin-right: 14px;
+    }
+  }
+
+  &__logo-image {
+    margin-left: 56px;
+    margin-bottom: 5px;
+
+    @media (min-width: $tablet-width) {
+      width: 101px;
+      height: 18px;
+      margin-left: 13px;
     }
 
     @media (min-width: $desktop-width) {
       width: 70px;
       height: 59px;
-      margin-right: 13px;
     }
   }
 }

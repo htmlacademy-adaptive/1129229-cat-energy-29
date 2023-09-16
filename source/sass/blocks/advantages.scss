@@ -9,6 +9,7 @@
     @media (min-width: $tablet-width) {
       padding: 0 30px;
       width: 768px;
+      margin-bottom: 52px;
     }
 
     @media (min-width: $desktop-width) {
@@ -25,7 +26,7 @@
     @media (min-width: $tablet-width) {
       grid-template-columns: repeat(2, 230px);
       grid-template-rows: repeat(2, 280px);
-      gap: 37px 153px;
+      gap: 37px 154px;
     }
 
     @media (min-width: $desktop-width) {
@@ -46,6 +47,7 @@
 
     @media (min-width: $tablet-width) {
       flex-direction: column;
+      width: 247px;
     }
   }
 
@@ -54,11 +56,11 @@
     font-size: 36px;
     line-height: 40px;
     font-weight: 400;
-    padding: 0 0 40px;
-    margin: 0;
+    padding: 0 0 41px;
+    margin: -1px 0 0 0;
 
     @media (min-width: $tablet-width) {
-      padding: 45px 0 72px;
+      padding: 15px 0 73px;
       font-size: 60px;
       line-height: 60px;
     }
@@ -82,7 +84,11 @@
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
-      margin: 0 0 31px 0;
+      margin: 0 0 29px 0;
+
+      &::before {
+        top: 51%;
+      }
     }
   }
 
@@ -99,15 +105,22 @@
     }
   }
 
+  &__text--br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
   &__item--one {
     @media (min-width: $tablet-width) {
       background: url("../../img/index/advantages-content-1.png") no-repeat;
-      background-position: 76% 0;
+      background-position: 72% 0;
 
       @media (min-resolution: 2dppx) {
         background: url("../../img/index/advantages-content-1@2x.png") no-repeat;
         background-size: 71px auto;
-        background-position: 76% 0;
       }
     }
   }
@@ -115,6 +128,7 @@
   &__item--two {
     @media (min-width: $tablet-width) {
       background: url("../../img/index/advantages-content-2.png") top right no-repeat;
+      background-position: 91% 0;
 
       @media (min-resolution: 2dppx) {
         background: url("../../img/index/advantages-content-2@2x.png") top right no-repeat;
@@ -126,6 +140,7 @@
   &__item--three {
     @media (min-width: $tablet-width) {
       background: url("../../img/index/advantages-content-3.png") top right no-repeat;
+      background-position: 91% 0;
 
       @media (min-resolution: 2dppx) {
         background: url("../../img/index/advantages-content-3@2x.png") top right no-repeat;
@@ -169,6 +184,11 @@
       background-repeat: no-repeat;
       width: 25px;
       height: 30px;
+
+      @media (min-width: $tablet-width) {
+        width: 26px;
+        height: 32px;
+      }
     }
   }
 
@@ -176,8 +196,13 @@
     &::before {
       background-image: url("../../img/icon/stak.svg#watch");
       background-repeat: no-repeat;
-      width: 26px;
+      width: 27px;
       height: 31px;
+
+      @media (min-width: $tablet-width) {
+        top: 49%;
+        left: 51%;
+      }
     }
   }
 }

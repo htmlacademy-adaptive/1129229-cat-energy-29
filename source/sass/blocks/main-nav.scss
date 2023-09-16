@@ -1,4 +1,8 @@
 .main-nav {
+  @media (min-width: $tablet-width) {
+    margin-right: 6px;
+  }
+
   &__burger {
     display: block;
     position: relative;
@@ -12,8 +16,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
+      bottom: 4px;
+      left: -1px;
       width: 100%;
       height: 2px;
       background-color: rgba(0, 0, 0, 1);
@@ -22,8 +26,8 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: 4px;
+      left: -1px;
       width: 100%;
       height: 2px;
       background-color: rgba(0, 0, 0, 1);
@@ -36,8 +40,8 @@
 
   &__line {
     position: absolute;
-    top: 8px;
-    left: 0;
+    top: 4px;
+    left: -1px;
     width: 100%;
     height: 2px;
     background-color: rgba(0, 0, 0, 1);

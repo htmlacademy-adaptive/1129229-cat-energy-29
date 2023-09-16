@@ -24,6 +24,7 @@
     padding: 0 30px;
     width: 768px;
     background: transparent;
+    margin: 0 auto;
 
     &::before {
       background-color: transparent;
@@ -61,7 +62,7 @@
 
     @media (min-width: $tablet-width) {
       text-align: left;
-      padding: 65px 0 45px 90px;
+      padding: 59px 0 41px 89px;
       color: #000000;
       font-size: 60px;
       line-height: 60px;
@@ -74,7 +75,7 @@
 
   &__description {
     padding: 0;
-    margin: 0;
+    margin: 0 3px 0 0;
     color: #ffffff;
     text-align: center;
     font-size: 14px;
@@ -119,8 +120,8 @@
       width: 244px;
       position: absolute;
       left: 120px;
-      top: 300px;
-      padding: 17px 14px;
+      top: 286px;
+      padding: 15px 14px;
       font-size: 20px;
       line-height: 26px;
     }

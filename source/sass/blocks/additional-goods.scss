@@ -31,7 +31,8 @@
     @media (min-width: $tablet-width) {
       grid-template-columns: 1fr 181px 42px;
       grid-template-rows: 45px 40px;
-      padding: 26px 0 28px;
+      padding: 26px 39px;
+      border: 1px solid #cdcdcd;
     }
 
     @media (min-width: $desktop-width) {
@@ -75,7 +76,7 @@
       &::before {
         width: 384%;
         left: -100%;
-        top: 25px;
+        top: 23px;
       }
     }
 
@@ -113,9 +114,14 @@
     font-size: 14px;
     line-height: 14px;
 
+    &:nth-last-child(3) {
+      text-align: center;
+    }
+
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 20px;
+      padding-top: 3px;
     }
   }
 
