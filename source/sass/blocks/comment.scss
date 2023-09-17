@@ -21,24 +21,24 @@
     padding: 40px 30px 24px;
 
     &::before {
-      width: 188%;
+      width: 768px;
       z-index: -1;
-      left: -44%;
-      top: 63px;
+      left: 0;
+      top: 64px;
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 70px;
-    margin: 0 auto 70px;
+    margin: 0 auto 71px;
 
     &::before {
-      width: 135%;
+      width: 1440px;
       height: 2px;
       z-index: -1;
-      left: -16%;
-      top: 23px;
+      left: 0%;
+      top: 22px;
     }
   }
 
@@ -57,6 +57,10 @@
       background-color: #ffffff;
       font-size: 36px;
       line-height: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 78px;
     }
   }
 
@@ -83,7 +87,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 94%;
+      width: 93.8%;
     }
 
     &:hover {

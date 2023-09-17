@@ -1,5 +1,5 @@
 .additionally {
-  margin: 0 auto 28px;
+  margin: 0 auto 33px;
   border: none;
   width: 320px;
   padding: 0 20px;
@@ -18,29 +18,29 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    margin: 0 auto 48px;
+    margin: 0 auto 50px;
     padding: 0 30px;
 
     &::before {
-      width: 188%;
+      width: 768px;
       height: 2px;
       z-index: -1;
-      left: -44%;
-      top: 23px;
+      left: 0%;
+      top: 24px;
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 70px;
-    margin: 0 auto 60px;
+    margin: 0 auto 57px;
 
     &::before {
-      width: 135%;
+      width: 1440px;
       height: 2px;
       z-index: -1;
-      left: -16%;
-      top: 22px;
+      left: 0%;
+      top: 24px;
     }
   }
 
@@ -68,8 +68,8 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    padding-left: 44px;
-    margin-bottom: 10px;
+    padding-left: 45px;
+    margin-bottom: 9px;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -92,7 +92,7 @@
 
     @media (min-width: $desktop-width) {
       grid-template-columns: repeat(4, 1fr);
-      gap: 0 104px;
+      gap: 0 80px;
     }
   }
 
@@ -131,8 +131,8 @@
     background-repeat: no-repeat;
     width: 19px;
     height: 19px;
-    top: 42%;
-    left: 42%;
+    top: 46%;
+    left: 47%;
     transform: translate(-50%, -50%);
 
     @media (min-width: $tablet-width) {

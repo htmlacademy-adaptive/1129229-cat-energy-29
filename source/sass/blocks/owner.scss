@@ -25,20 +25,21 @@
     gap: 76px;
 
     &::before {
-      width: 188%;
-      left: -44%;
-      top: 48px;
+      width: 768px;
+      left: 0%;
+      top: 49px;
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 70px;
+    gap: 77px;
 
     &::before {
-      width: 135%;
-      left: -16%;
-      top: 22px;
+      width: 1440px;
+      left: 0%;
+      top: 23px;
     }
   }
 
@@ -56,6 +57,10 @@
       background-color: #ffffff;
       font-size: 36px;
       line-height: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      letter-spacing: -0.1px;
     }
   }
 
@@ -144,6 +149,12 @@
       background-color: #000000;
       background-repeat: no-repeat;
       z-index: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        right: 13px;
+      }
     }
   }
 

@@ -39,7 +39,21 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+// autoprefixer
+
+const style = () => {
+  return gulp.src('source/sass/style.sass', { sourcemaps: true })
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(browser.stream());
+};
 
 export default gulp.series(
-  styles, server, watcher
+  styles, server, watcher, style
 );

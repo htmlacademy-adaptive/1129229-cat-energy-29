@@ -1,7 +1,7 @@
 .additional-goods {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 896px 245px;
+    grid-template-columns: 935px 245px;
     grid-template-rows: 36px 288px;
     gap: 80px;
   }
@@ -9,7 +9,7 @@
   &__list {
     padding: 0;
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 70px;
@@ -17,6 +17,7 @@
 
     @media (min-width: $desktop-width) {
       margin: 0;
+      padding-left: 41px;
     }
   }
 
@@ -24,22 +25,31 @@
     list-style: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 27px 29px 40px;
-    padding: 13px 0 20px;
+    grid-template-rows: 27px 29.2px 40px;
+    padding: 13px 0 19.5px;
     border-bottom: 1px solid #cdcdcd;
 
     @media (min-width: $tablet-width) {
-      grid-template-columns: 1fr 181px 42px;
+      grid-template-columns: 1fr 168px 92px;
       grid-template-rows: 45px 40px;
-      padding: 26px 39px;
-      border: 1px solid #cdcdcd;
+      padding: 26px 38px 27px;
+      border-left: 1px solid #cdcdcd;
+      border-right: 1px solid #cdcdcd;
+      border-top: 1px solid #cdcdcd;
+      margin-bottom: -1px;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: 2fr 2fr 1fr 1fr;
+      grid-template-columns: 325px 243px 82px 244px;
       grid-template-rows: auto;
       align-items: center;
       padding: 15px 0 16px;
+      border-left: none;
+      border-right: none;
     }
   }
 
@@ -85,9 +95,9 @@
       margin-bottom: 0;
 
       &::before {
-        width: 520%;
-        left: -96%;
-        top: 23px;
+        width: 1440px;
+        left: -17%;
+        top: 24px;
       }
     }
   }
@@ -114,14 +124,23 @@
     font-size: 14px;
     line-height: 14px;
 
-    &:nth-last-child(3) {
-      text-align: center;
-    }
-
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 20px;
-      padding-top: 3px;
+      padding-top: 2px;
+      text-align: right;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+    }
+
+    &--margin {
+      margin-left: 2px;
+
+      @media (min-width: $tablet-width) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -133,9 +152,16 @@
     text-align: right;
 
     @media (min-width: $tablet-width) {
-      text-align: left;
+      text-align: right;
       font-size: 16px;
       line-height: 20px;
+      margin-right: 2px;
+      margin-top: 1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+      margin-top: 2px;
     }
   }
 
@@ -172,7 +198,7 @@
 
     @media (min-width: $tablet-width) {
       background: url("../../img/catalog/tablet/cat-prize-tab.jpg") center center no-repeat;
-      padding: 54px 125px 66px 77px;
+      padding: 54px 125px 61px 77px;
       flex-direction: row;
 
       @media (min-resolution: 2dppx) {
@@ -204,10 +230,16 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+      margin-top: 3px;
+      width: 80px;
+      height: 83px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 46px;
+      margin-bottom: 37px;
+      margin-top: 1px;
+      width: 82px;
+      height: 85px;
     }
   }
 
@@ -225,6 +257,7 @@
       width: 161px;
       margin-left: auto;
       text-align: left;
+      margin-top: 9px;
     }
 
     @media (min-width: $desktop-width) {

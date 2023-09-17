@@ -17,7 +17,7 @@
           </picture>
           <img class="main-header__logo-image" src="./img/icon/logo-cat-energy.svg" width="101px" height="18px" alt="Логотип cat energy">
         </a>
-        <nav class="main-header__nav main-nav">
+        <nav class="main-header__nav main-nav main-nav--active">
           <button class="main-nav__burger" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <span class="main-nav__line"></span>
@@ -110,6 +110,9 @@
               <source media="(min-width: 768px)" srcset="./img/index/slider-left-cat.png 1x, ./img/index/slider-left-cat@2x.png 2x">
               <img class="example__image example__image--left" src="./img/index/slider-left-cat-mob.png" srcset="./img/index/slider-left-cat-mob@2x.png 2x" alt="Кот до">
             </picture>
+            <div class="example__line">
+              <button class="example__thumb"></button>
+            </div>
             <picture>
               <source media="(min-width: 768px)" srcset="./img/index/slider-right-cat.png 1x, ./img/index/slider-right-cat@2x.png 2x">
               <img class="example__image example__image--right" src="./img/index/slider-right-cat-mob.png" srcset="./img/index/slider-right-cat-mob@2x.png 2x" alt="Кот После">
@@ -121,8 +124,8 @@
         <div class="contacts__wrapper">
           <h2 class="contacts__title">приглашаем <br> к сотрудничеству дилеров!</h2>
           <address class="contacts__text">
-            <p class="contacts__text-street">ул. Большая <br> Конюшенная, д. 19/8</p>
-            <p class="contacts__text-city">Санкт-Петербург</p>
+            <p class="contacts__text-street contacts__text-street--index">ул. Большая <br> Конюшенная, д. 19/8</p>
+            <p class="contacts__text-city contacts__text-city--index">Санкт-Петербург</p>
           </address>
         </div>
         <div class="contacts__map">
@@ -156,5 +159,6 @@
         <img class="footer__academy-icon" src="./img/icon/logo-html-academy.svg" alt="HTML Academy">
       </a>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

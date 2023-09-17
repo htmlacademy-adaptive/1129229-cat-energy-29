@@ -41,7 +41,8 @@
       grid-template-columns: 162px 295px;
       grid-template-rows: 100px 1fr 38px;
       gap: 0;
-      padding: 47px 61px 55px 52px;
+      padding: 46px 61px 52px 52px;
+      margin-bottom: 55px;
     }
   }
 
@@ -57,6 +58,7 @@
     @media (min-width: $tablet-width) {
       font-size: 36px;
       line-height: 36px;
+      margin: 0 0 3px;
     }
   }
 
@@ -82,7 +84,7 @@
 
     @media (min-width: $desktop-width) {
       grid-column: 1 / -1;
-      padding: 24px 0 56px;
+      padding: 38px 0 29px;
     }
   }
 
@@ -122,6 +124,7 @@
 
     @media (min-width: $desktop-width) {
       grid-column: 1 / -1;
+      margin-top: 0;
     }
 
     &:hover::before,
@@ -188,6 +191,7 @@
         background-size: 70px;
         width: 70px;
         height: 97px;
+        top: -7px;
       }
     }
   }
@@ -196,7 +200,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../../img/icon/stak.svg#program-pro");
+      background-image: url("../../img/icon/stak.svg#program-pro-mobile");
       background-repeat: no-repeat;
       width: 67px;
       height: 28px;
@@ -207,6 +211,7 @@
 
     @media (min-width: $tablet-width) {
       &::before {
+        background-image: url("../../img/icon/stak.svg#program-pro");
         background-size: 268px;
         width: 268px;
         height: 112px;
@@ -221,6 +226,8 @@
         background-size: 134px;
         width: 134px;
         height: 56px;
+        top: 48%;
+        left: -19%;
       }
     }
   }
