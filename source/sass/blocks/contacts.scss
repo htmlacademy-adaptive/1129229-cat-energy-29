@@ -22,7 +22,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 59px 75px 59px 80px;
+      padding: 60px 75px 59px 80px;
       position: absolute;
       left: 110px;
       top: 95px;
@@ -58,7 +58,7 @@
   }
 
   &__text {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     color: #444444;
     font-size: 14px;
     line-height: 20px;

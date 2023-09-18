@@ -3,14 +3,19 @@
   padding: 0;
   margin: 0;
   position: absolute;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%);
   top: 64px;
-  width: 100%;
+  width: 320px;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
     display: flex;
     position: inherit;
+    max-width: 600px;
+    flex-wrap: wrap;
+    transform: none;
+    width: auto;
   }
 
   &__item {

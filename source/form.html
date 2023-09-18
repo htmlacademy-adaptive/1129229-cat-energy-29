@@ -14,9 +14,9 @@
         <picture class="main-header__logo-picture">
           <source media="(min-width: 1440px)" srcset="./img/icon/logo-pic-desk.svg">
           <source media="(min-width: 768px)" srcset="./img/icon/logo-pic-tab.svg">
-          <img class="main-header__logo-icon" src="./img/icon/logo-pic-mobile.svg" width="33px" height="38px" alt="Логотип кот">
+          <img class="main-header__logo-icon" src="./img/icon/logo-pic-mobile.svg" width="33" height="38" alt="Логотип кот">
         </picture>
-        <img class="main-header__logo-image" src="./img/icon/logo-cat-energy.svg" width="101px" height="18px" alt="Логотип cat energy">
+        <img class="main-header__logo-image" src="./img/icon/logo-cat-energy.svg" width="101" height="18" alt="Логотип cat energy">
       </a>
       <nav class="main-header__nav main-nav">
         <button class="main-nav__burger" type="button">
@@ -42,21 +42,21 @@
       <h1 class="page-form__title">Подбор программы</h1>
       <p class="page-form__text">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
     </div>
-    <form class="page-form__form form" action="">
+    <form class="page-form__form form">
       <fieldset class="form__data data">
         <legend class="visually-hidden">Информация о коте</legend>
         <ul class="data__list">
           <li class="data__item">
-            <label class="data__label" for="name">ИМЯ:*</label>
-            <input id="name" class="data__input" type="text" value="Барсик" required>
+            <label class="data__label" for="nameCat">ИМЯ:*</label>
+            <input id="nameCat" class="data__input" type="text" value="Барсик" required>
           </li>
           <li class="data__item">
             <label class="data__label" for="name">Вес (кг):*</label>
             <input id="name" class="data__input" type="text" value="7" required>
           </li>
           <li class="data__item">
-            <label class="data__label" for="name">Возраст (лет):</label>
-            <input id="name" class="data__input" type="text" value="7" required>
+            <label class="data__label" for="age">Возраст (лет):</label>
+            <input id="age" class="data__input" type="text" value="7" required>
           </li>
         </ul>
         <ul class="data__program">
@@ -153,9 +153,7 @@
     </section>
   </main>
   <footer class="footer">
-    <a href="index.html" class="footer__logo">
-      <img class="footer__logo-image" src="./img/icon/footer-logo.svg" width="128px" height="24px" alt="Логотип cat energy">
-    </a>
+    <a href="index.html" class="footer__logo"></a>
     <ul class="footer__social social-list">
       <li class="social-list__item">
         <a class="social-list__link social-list__link--vk" href="#">
@@ -175,7 +173,7 @@
     </ul>
     <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__academy">
       <p class="footer__academy-text">HTML Academy</p>
-      <img class="footer__academy-icon" src="./img/icon/logo-html-academy.svg" alt="HTML Academy">
+      <span class="footer__academy-logo"></span>
     </a>
   </footer>
   <script src="./js/script.js"></script>

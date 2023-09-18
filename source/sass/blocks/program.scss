@@ -5,6 +5,7 @@
     padding: 0 20px;
     width: 320px;
     margin: 0 auto;
+    flex-wrap: wrap;
 
     @media (min-width: $tablet-width) {
       padding: 0 30px;
@@ -16,6 +17,7 @@
       padding: 0 110px;
       flex-direction: row;
       justify-content: space-between;
+
     }
   }
 
@@ -63,7 +65,7 @@
   }
 
   &__text {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     color: #444444;
     font-size: 14px;
     font-weight: 400;

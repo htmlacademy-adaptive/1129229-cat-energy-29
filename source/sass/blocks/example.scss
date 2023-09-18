@@ -21,7 +21,7 @@
       padding: 0 110px 66px;
       display: grid;
       grid-template-columns: 436px 560px;
-      grid-template-rows: 206px 165px 132px 30px;
+      grid-template-rows: 206px auto 132px 30px;
       gap: 0 224px;
       align-items: flex-start;
       background-image: linear-gradient(#ffffff 22.7%, #f2f2f2 22.7%, #f2f2f2 100%);
@@ -46,7 +46,7 @@
   }
 
   &__text {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     color: #444444;
     font-size: 14px;
     line-height: 18px;
@@ -64,6 +64,7 @@
       grid-column: 1;
       grid-row: 2;
       padding-right: 3px;
+      margin: 0 0 69px;
     }
   }
 
@@ -128,7 +129,7 @@
 
   &__item-description {
     color: #444444;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 12px;
