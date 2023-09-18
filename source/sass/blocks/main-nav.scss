@@ -78,4 +78,8 @@
       left: 4px;
     }
   }
+
+  &--no-js &__burger {
+    display: none;
+  }
 }
