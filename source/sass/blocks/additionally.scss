@@ -104,9 +104,10 @@
     display: flex;
     align-items: center;
     position: relative;
+    cursor: pointer;
   }
 
-  &__mark {
+  &__mask {
     position: absolute;
     top: -5px;
     width: 28px;
@@ -124,7 +125,7 @@
     }
   }
 
-  &__input[type="checkbox"]:checked + &__mark::before {
+  &__input[type="checkbox"]:checked + &__mask::before {
     content: "";
     position: absolute;
     background-image: url("../../img/icon/stak.svg#check-mark");
@@ -141,5 +142,17 @@
       top: 57%;
       left: 53%;
     }
+  }
+
+  &__label:hover &__mask {
+    outline: 1px solid #bababa;
+  }
+
+  &__input[disabled] ~ &__mask {
+    opacity: 0.3;
+  }
+
+  &__input[disabled] ~ &__text {
+    opacity: 0.3;
   }
 }

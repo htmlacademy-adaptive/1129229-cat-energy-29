@@ -223,6 +223,14 @@
     cursor: pointer;
     z-index: 1;
 
+    &:hover {
+      background-color: #68b738;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
     @media (min-width: $tablet-width) {
       left: 49.9%;
     }
@@ -231,6 +239,7 @@
   &__thumb {
     position: absolute;
     background-image: url("../../img/icon/stak.svg#thumb");
+    background-color: #ffffff;
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
@@ -241,6 +250,10 @@
     border-radius: 50%;
     border: none;
     cursor: pointer;
+  }
+
+  &__line:hover &__thumb {
+    background-image: url("../../img/icon/stak.svg#thumb--green");
   }
 
   &__image {
