@@ -92,9 +92,24 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
+    text-decoration: none;
 
     @media (min-width: $desktop-width) {
       max-height: 196px;
+    }
+  }
+
+  &__link--title {
+    grid-column: 2;
+    grid-row: 1;
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      max-height: 73px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-height: 67px;
     }
   }
 
@@ -214,6 +229,7 @@
 
   &__button {
     grid-column: 1 / -1;
+    display: block;
   }
 
   &__image {

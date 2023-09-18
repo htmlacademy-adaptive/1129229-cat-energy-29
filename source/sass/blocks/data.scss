@@ -126,6 +126,10 @@
     &:focus {
       outline: 2px solid #444444;
     }
+
+    &:invalid {
+      outline: 2px solid #ff8282;
+    }
   }
 
   &__radio {
@@ -157,7 +161,7 @@
     content: "";
     position: absolute;
     top: 49%;
-    left: 49%;
+    left: 50%;
     width: 15px;
     transform: translate(-50%, -50%);
     height: 15px;
@@ -165,8 +169,8 @@
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
     }
   }
 
@@ -191,5 +195,9 @@
       font-size: 20px;
       line-height: normal;
     }
+  }
+
+  &__label--behavior:hover &__mask {
+    outline: 1px solid #bababa;
   }
 }
