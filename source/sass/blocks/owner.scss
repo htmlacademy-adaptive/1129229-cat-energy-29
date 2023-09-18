@@ -132,6 +132,10 @@
     &:focus {
       outline: 2px solid #444444;
     }
+
+    &:invalid {
+      outline: 2px solid #ff8282;
+    }
   }
 
   &__item--email {

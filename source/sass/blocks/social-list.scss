@@ -29,17 +29,39 @@
     display: block;
     width: 28px;
     height: 22px;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__link--vk {
-    background: url("../../img/icon/vkontakte.svg") center center no-repeat;
+    mask-image: url("../../img/icon/vkontakte.svg");
+    background-color: #666666;
+    background-repeat: no-repeat;
+
+    &:hover, &:focus {
+      background-color: #68b738;
+    }
   }
 
   &__link--youtube {
-    background: url("../../img/icon/youtube.svg") center center no-repeat;
+    mask-image: url("../../img/icon/youtube.svg");
+    background-color: #666666;
+    background-repeat: no-repeat;
+
+    &:hover, &:focus {
+      background-color: #68b738;
+    }
   }
 
   &__link--telegram {
-    background: url("../../img/icon/telegram.svg") center center no-repeat;
+    mask-image: url("../../img/icon/telegram.svg");
+    background-color: #666666;
+    background-repeat: no-repeat;
+
+    &:hover, &:focus {
+      background-color: #68b738;
+    }
   }
 }

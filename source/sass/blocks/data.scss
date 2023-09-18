@@ -126,6 +126,10 @@
     &:focus {
       outline: 2px solid #444444;
     }
+
+    &:invalid {
+      outline: 2px solid #ff8282;
+    }
   }
 
   &__radio {
@@ -191,5 +195,9 @@
       font-size: 20px;
       line-height: normal;
     }
+  }
+
+  &__label--behavior:hover &__mask {
+    outline: 1px solid #bababa;
   }
 }
