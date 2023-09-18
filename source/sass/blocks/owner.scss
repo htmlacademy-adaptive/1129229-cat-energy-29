@@ -1,11 +1,11 @@
 .owner {
-  padding: 26px 20px 24px;
+  padding: 26px 17px 26px;
   border: none;
   position: relative;
   width: 320px;
   margin: 0 auto;
   display: grid;
-  gap: 35px;
+  gap: 36px;
 
   &::before {
     content: "";
@@ -13,7 +13,7 @@
     width: 93px;
     height: 2px;
     background-color: #68b738;
-    top: 40px;
+    top: 42px;
     right: 0;
     z-index: -1;
   }
@@ -25,20 +25,21 @@
     gap: 76px;
 
     &::before {
-      width: 188%;
-      left: -44%;
-      top: 48px;
+      width: 768px;
+      left: 0%;
+      top: 49px;
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 70px;
+    gap: 77px;
 
     &::before {
-      width: 135%;
-      left: -16%;
-      top: 22px;
+      width: 1440px;
+      left: 0%;
+      top: 23px;
     }
   }
 
@@ -57,6 +58,10 @@
       font-size: 36px;
       line-height: 36px;
     }
+
+    @media (min-width: $desktop-width) {
+      letter-spacing: -0.1px;
+    }
   }
 
   &__label {
@@ -64,7 +69,8 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    margin-right: 13px;
+    margin-right: 14px;
+    margin-left: 2px;
     white-space: nowrap;
     font-weight: 400;
     position: relative;
@@ -81,10 +87,11 @@
     margin: 0;
     padding: 0;
     display: grid;
-    gap: 14px;
+    gap: 15px;
 
     @media (min-width: $tablet-width) {
-      padding: 0 40px;
+      padding: 0 38px;
+      gap: 20px;
     }
 
     @media (min-width: $desktop-width) {
@@ -103,7 +110,7 @@
   &__input {
     font-family: "Oswald", sans-serif;
     width: 100%;
-    padding: 14px 15px 13px;
+    padding: 11px 15px 8px;
     border: none;
     outline: 1px solid #e7e7e7;
     color: #444444;
@@ -133,15 +140,21 @@
     &::before {
       content: "";
       position: absolute;
-      top: 48%;
+      top: 50%;
       transform: translate(0, -50%);
-      right: 12px;
+      right: 16px;
       width: 20px;
       height: 20px;
       mask-image: url("../../img/icon/stak.svg#email");
       background-color: #000000;
       background-repeat: no-repeat;
       z-index: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        right: 13px;
+      }
     }
   }
 
@@ -153,9 +166,9 @@
       position: absolute;
       top: 50%;
       transform: translate(0, -50%);
-      right: 12px;
+      right: 16px;
       width: 20px;
-      height: 20px;
+      height: 25px;
       mask-image: url("../../img/icon/stak.svg#phone");
       background-color: #000000;
       background-repeat: no-repeat;

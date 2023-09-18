@@ -8,7 +8,7 @@
   &::before {
     content: "";
     position: absolute;
-    width: 93px;
+    width: 160px;
     height: 2px;
     background-color: #68b738;
     top: 15px;
@@ -17,29 +17,28 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    margin: 0 auto 65px;
-    padding: 26px 30px 24px;
+    margin: 0 auto 41px;
+    padding: 40px 30px 24px;
 
     &::before {
-      width: 188%;
-      height: 2px;
+      width: 768px;
       z-index: -1;
-      left: -44%;
-      top: 47px;
+      left: 0;
+      top: 64px;
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     padding: 0 70px;
-    margin: 0 auto 70px;
+    margin: 0 auto 71px;
 
     &::before {
-      width: 135%;
+      width: 1440px;
       height: 2px;
       z-index: -1;
-      left: -16%;
-      top: 23px;
+      left: 0%;
+      top: 22px;
     }
   }
 
@@ -53,20 +52,21 @@
     float: left;
 
     @media (min-width: $tablet-width) {
-      margin: 0 0 87px;
+      margin: 0 0 89px;
       padding: 0 40px;
       background-color: #ffffff;
       font-size: 36px;
       line-height: 36px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       margin: 0 0 78px;
     }
   }
 
   &__area {
     width: 100%;
+    min-height: 148px;
     resize: none;
     padding: 14px 15px;
     font-family: "Oswald", sans-serif;
@@ -78,14 +78,16 @@
     outline: 1px solid #e7e7e7;
 
     @media (min-width: $tablet-width) {
+      padding: 10px 21px;
       margin: 0 40px;
-      width: 89%;
+      width: 88.5%;
       font-size: 20px;
       line-height: 30px;
+      min-height: 173px;
     }
 
-    @media (min-width: $tablet-width) {
-      width: 94%;
+    @media (min-width: $desktop-width) {
+      width: 93.8%;
     }
 
     &:hover {

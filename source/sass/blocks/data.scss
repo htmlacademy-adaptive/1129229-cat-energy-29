@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: repeat(2, 570px);
     gap: 80px;
+    margin-bottom: 22px;
   }
 
   &__list {
@@ -26,6 +27,7 @@
     @media (min-width: $tablet-width) {
       padding: 22px 0 24px;
       border: none;
+      margin: 0 0 48px;
     }
 
     @media (min-width: $desktop-width) {
@@ -34,23 +36,29 @@
   }
 
   &__program {
-    padding: 22px 20px 19px;
+    padding: 28px 20px 24px;
     border-bottom: 1px solid #d9d9d9;
     margin: 0;
     display: grid;
-    gap: 25px;
+    gap: 9px;
 
     @media (min-width: $tablet-width) {
-      padding: 25px 28px;
+      padding: 27px 27px 30px;
       border: 1px solid #e7e7e7;
-      margin-bottom: 65px;
-      gap: 7px;
+      margin-bottom: 40px;
+      gap: 3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 22px 27px 24px;
+      gap: 0;
+      margin-bottom: 47px;
     }
   }
 
   &__item {
     list-style: none;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     display: flex;
     align-items: center;
 
@@ -58,8 +66,18 @@
       margin-bottom: 20px;
     }
 
+    @media (min-width: $desktop-width) {
+      margin-bottom: 19px;
+    }
+
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  &__item--margin {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 10px;
     }
   }
 
@@ -68,7 +86,8 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    margin-right: 13px;
+    margin-left: 0;
+    margin-right: 14px;
     white-space: nowrap;
     font-weight: 400;
     position: relative;
@@ -84,7 +103,7 @@
   &__input {
     font-family: "Oswald", sans-serif;
     width: 100%;
-    padding: 14px 15px 13px;
+    padding: 10px 15px 9px;
     border: none;
     outline: 1px solid #e7e7e7;
     color: #444444;
@@ -168,7 +187,7 @@
     text-transform: uppercase;
 
     @media (min-width: $tablet-width) {
-      padding-left: 60px;
+      padding-left: 59px;
       font-size: 20px;
       line-height: normal;
     }

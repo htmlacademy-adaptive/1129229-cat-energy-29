@@ -2,23 +2,44 @@
   display: none;
   padding: 0;
   margin: 0;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 100%;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    position: inherit;
   }
 
   &__item {
     list-style: none;
-    margin-right: 33px;
+    margin: 0;
+    background-color: #ffffff;
+    border-top: 1px solid #e6e6e6;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 34px;
+      border: none;
+      background-color: transparent;
+    }
 
     &:last-child {
-      margin-right: 0;
+      margin-right: -2px;
+      border-bottom: 1px solid #e6e6e6;
+
+      @media (min-width: $tablet-width) {
+        border: none;
+      }
     }
   }
 
   &__link--active {
-    position: relative;
-    border-bottom: 2px solid #68b738;
+    @media (min-width: $tablet-width) {
+      position: relative;
+      border-bottom: 2px solid #68b738;
+    }
   }
 
   &__link--active-white {
@@ -37,18 +58,28 @@
     text-transform: uppercase;
     text-decoration: none;
     transition: 0.3s;
+    display: block;
+    text-align: center;
+    padding: 23px 0 22px;
+    margin-right: 2px;
 
     @media (min-width: $tablet-width) {
-      padding: 10px 0;
+      padding: 10px 0 6px;
       font-size: 18px;
       line-height: 24px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 8px 0;
+      padding: 6px 0;
       color: #ffffff;
       font-size: 20px;
       line-height: normal;
+    }
+
+    &--catalog {
+      @media (min-width: $tablet-width) {
+        padding: 10px 0 4px;
+      }
     }
 
     &:hover,

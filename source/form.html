@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <title>Формы</title>
 </head>
 <body class="page__body">
@@ -12,8 +12,9 @@
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
         <picture class="main-header__logo-picture">
-          <source media="(min-width: 768px)" srcset="./img/icon/logo-pic.svg">
-          <img class="main-header__logo-image" src="./img/icon/logo-pic-mobile.svg" width="33px" height="38px" alt="Логотип кот">
+          <source media="(min-width: 1440px)" srcset="./img/icon/logo-pic-desk.svg">
+          <source media="(min-width: 768px)" srcset="./img/icon/logo-pic-tab.svg">
+          <img class="main-header__logo-icon" src="./img/icon/logo-pic-mobile.svg" width="33px" height="38px" alt="Логотип кот">
         </picture>
         <img class="main-header__logo-image" src="./img/icon/logo-cat-energy.svg" width="101px" height="18px" alt="Логотип cat energy">
       </a>
@@ -30,7 +31,7 @@
             <a class="site-list__link site-list__link--black" href="catalog.html">каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--black site-list__link--active" href="form.html">подбор программы</a>
+            <a class="site-list__link site-list__link--active site-list__link--black" href="form.html">подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -59,21 +60,21 @@
           </li>
         </ul>
         <ul class="data__program">
-          <li class="data__item">
+          <li class="data__item data__item--margin">
             <label class="data__label" for="slim">
               <input id="slim" class="data__radio visually-hidden" type="radio" name="radio-group" value="slim" checked>
               <span class="data__mask"></span>
               <span class="data__text">похудение</span>
             </label>
           </li>
-          <li class="data__item">
+          <li class="data__item data__item--margin">
             <label class="data__label" for="weight">
               <input id="weight" class="data__radio visually-hidden" type="radio" name="radio-group" value="weight">
               <span class="data__mask"></span>
               <span class="data__text">Набор массы</span>
             </label>
           </li>
-          <li class="data__item">
+          <li class="data__item data__item--margin">
             <label class="data__label" for="advice">
               <input id="advice" class="data__radio visually-hidden" type="radio" name="radio-group" value="advice">
               <span class="data__mask"></span>
@@ -135,14 +136,14 @@
       </fieldset>
       <div class="form__box box">
         <button class="box__button button" type="submit">отправить заявку</button>
-        <span class="box__description">* — Обязательные поля</span>
+        <span class="box__description">* &#8211; Обязательные поля</span>
       </div>
     </form>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+        <h2 class="contacts__title">приглашаем <br> к сотрудничеству дилеров!</h2>
         <address class="contacts__text">
-          <p class="contacts__text-street">ул. Большая <br> Конюшенная, д. 19/8</p>
+          <p class="contacts__text-street contacts__text-street--form">ул. Большая <br> Конюшенная, д. 19/8</p>
           <p class="contacts__text-city">Санкт-Петербург</p>
         </address>
       </div>
@@ -177,5 +178,6 @@
       <img class="footer__academy-icon" src="./img/icon/logo-html-academy.svg" alt="HTML Academy">
     </a>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>

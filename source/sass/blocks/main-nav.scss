@@ -1,4 +1,8 @@
 .main-nav {
+  @media (min-width: $tablet-width) {
+    margin-right: 6px;
+  }
+
   &__burger {
     display: block;
     position: relative;
@@ -12,8 +16,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
+      top: -4px;
+      left: -1px;
       width: 100%;
       height: 2px;
       background-color: rgba(0, 0, 0, 1);
@@ -22,8 +26,8 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: 4px;
+      left: -1px;
       width: 100%;
       height: 2px;
       background-color: rgba(0, 0, 0, 1);
@@ -36,10 +40,42 @@
 
   &__line {
     position: absolute;
-    top: 8px;
-    left: 0;
+    top: 4px;
+    left: -1px;
     width: 100%;
     height: 2px;
     background-color: rgba(0, 0, 0, 1);
+  }
+
+  &--catalog {
+    @media (min-width: $desktop-width) {
+      margin-right: 8px;
+    }
+  }
+
+  &--active &__list {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+
+  &--active &__line {
+    display: none;
+  }
+
+  &--active &__burger {
+    &::before {
+      transform: rotate(47deg);
+      top: 4px;
+      left: 4px;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      bottom: 12px;
+      left: 4px;
+    }
   }
 }
