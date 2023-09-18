@@ -161,7 +161,7 @@
     content: "";
     position: absolute;
     top: 49%;
-    left: 49%;
+    left: 50%;
     width: 15px;
     transform: translate(-50%, -50%);
     height: 15px;
@@ -169,8 +169,8 @@
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
     }
   }
 
