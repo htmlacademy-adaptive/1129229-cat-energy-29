@@ -55,6 +55,10 @@
 
   &--active &__list {
     display: block;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
   }
 
   &--active &__line {

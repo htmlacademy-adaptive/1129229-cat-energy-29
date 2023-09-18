@@ -10,6 +10,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    position: inherit;
   }
 
   &__item {
@@ -21,6 +22,7 @@
     @media (min-width: $tablet-width) {
       margin-right: 34px;
       border: none;
+      background-color: transparent;
     }
 
     &:last-child {
