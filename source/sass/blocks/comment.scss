@@ -44,61 +44,61 @@
       top: 22px;
     }
   }
+}
 
-  &__title {
-    color: #000000;
-    font-size: 24px;
-    line-height: 26px;
-    font-weight: 400;
-    margin: 0 0 38px;
-    padding: 0;
-    float: left;
+.comment__title {
+  color: #000000;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0 0 38px;
+  padding: 0;
+  float: left;
 
-    @media (min-width: $tablet-width) {
-      margin: 0 0 89px;
-      padding: 0 40px;
-      background-color: #ffffff;
-      font-size: 36px;
-      line-height: 36px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin: 0 0 78px;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0 0 89px;
+    padding: 0 40px;
+    background-color: #ffffff;
+    font-size: 36px;
+    line-height: 36px;
   }
 
-  &__area {
-    width: 100%;
-    min-height: 148px;
-    resize: none;
-    padding: 14px 15px;
-    font-family: "Oswald", sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #444444;
-    border: none;
-    outline: 1px solid #e7e7e7;
+  @media (min-width: $desktop-width) {
+    margin: 0 0 78px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      padding: 10px 21px;
-      margin: 0 40px;
-      width: 88.5%;
-      font-size: 20px;
-      line-height: 30px;
-      min-height: 173px;
-    }
+.comment__area {
+  width: 100%;
+  min-height: 148px;
+  resize: none;
+  padding: 14px 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  border: none;
+  outline: 1px solid #e7e7e7;
 
-    @media (min-width: $desktop-width) {
-      width: 93.8%;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 10px 21px;
+    margin: 0 40px;
+    width: 88.5%;
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 173px;
+  }
 
-    &:hover {
-      outline-color: #cdcdcd;
-    }
+  @media (min-width: $desktop-width) {
+    width: 93.8%;
+  }
 
-    &:focus {
-      outline: 2px solid #444444;
-    }
+  &:hover {
+    outline-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
   }
 }

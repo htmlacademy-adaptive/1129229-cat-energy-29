@@ -7,7 +7,7 @@
   transform: translate(-50%);
   top: 64px;
   width: 320px;
-  z-index: 1;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -17,127 +17,127 @@
     transform: none;
     width: auto;
   }
+}
 
-  &__item {
-    list-style: none;
-    margin: 0;
-    background-color: #ffffff;
-    border-top: 1px solid #e6e6e6;
+.site-list__item {
+  list-style: none;
+  margin: 0;
+  background-color: #ffffff;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 34px;
+    border: none;
+    background-color: transparent;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
 
     @media (min-width: $tablet-width) {
-      margin-right: 34px;
       border: none;
-      background-color: transparent;
-    }
-
-    &:last-child {
-      border-bottom: 1px solid #e6e6e6;
-
-      @media (min-width: $tablet-width) {
-        border: none;
-      }
-    }
-
-    &:nth-child(2) {
-      @media (min-width: $desktop-width) {
-        margin-right: 33px;
-      }
     }
   }
 
-  &__link--active {
-    @media (min-width: $tablet-width) {
-      position: relative;
-      border-bottom: 2px solid #68b738;
-    }
-  }
-
-  &__link--active-white {
-    border-color: #68b738;
-
+  &:nth-child(2) {
     @media (min-width: $desktop-width) {
-      border-color: #ffffff;
+      margin-right: 33px;
     }
   }
+}
 
-  &__link {
-    color: #000000;
+.site-list__link--active {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    border-bottom: 2px solid #68b738;
+  }
+}
+
+.site-list__link--active-white {
+  border-color: #68b738;
+
+  @media (min-width: $desktop-width) {
+    border-color: #ffffff;
+  }
+}
+
+.site-list__link {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s;
+  display: block;
+  text-align: center;
+  padding: 23px 0 22px;
+  margin-right: 2px;
+
+  @media (min-width: $tablet-width) {
+    padding: 6px 0 6px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 6px 0;
+    color: #ffffff;
     font-size: 20px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: 0.3s;
-    display: block;
-    text-align: center;
-    padding: 23px 0 22px;
-    margin-right: 2px;
+    line-height: normal;
+  }
 
+  &--catalog {
     @media (min-width: $tablet-width) {
-      padding: 6px 0 6px;
-      font-size: 18px;
-      line-height: 24px;
-      margin-right: 0;
+      padding: 5px 0 4px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 6px 0;
-      color: #ffffff;
-      font-size: 20px;
-      line-height: normal;
-    }
-
-    &--catalog {
-      @media (min-width: $tablet-width) {
-        padding: 5px 0 4px;
-      }
-
-      @media (min-width: $desktop-width) {
-        padding: 6px 0 4px;
-      }
-    }
-
-    &:hover,
-    &:focus {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
+      padding: 6px 0 4px;
     }
   }
 
-  &__link--black {
-    color: #000000;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
 
-  &__item--index {
-    @media (min-width: $tablet-width) {
-      margin-right: -2px;
-    }
+  &:active {
+    opacity: 0.3;
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      margin-right: 0;
-    }
+.site-list__link--black {
+  color: #000000;
+}
+
+.site-list__item--index {
+  @media (min-width: $tablet-width) {
+    margin-right: -2px;
   }
 
-  &__item--catalog {
-    @media (min-width: $tablet-width) {
-      margin-right: -2px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      margin-right: -2px;
-    }
+.site-list__item--catalog {
+  @media (min-width: $tablet-width) {
+    margin-right: -2px;
   }
 
-  &__item--form {
-    @media (min-width: $tablet-width) {
-      margin-right: -5px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-right: -2px;
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      margin-right: 0;
-    }
+.site-list__item--form {
+  @media (min-width: $tablet-width) {
+    margin-right: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
