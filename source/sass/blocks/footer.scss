@@ -24,11 +24,14 @@
     width: 128px;
     height: 24px;
     padding: 32px 0;
-    border-bottom: 1px solid #d9d9d9;
     mask-image: url("../../img/icon/stak.svg#footer-logo");
     background-color: #111111;
 
     &:hover {
+      background-color: #3e3e3e;
+    }
+
+    &:focus {
       background-color: #3e3e3e;
     }
 
@@ -56,6 +59,10 @@
     padding: 20px 0;
     border-top: 1px solid #d9d9d9;
 
+    &:active {
+      opacity: 0.3;
+    }
+
     @media (min-width: $tablet-width) {
       border: none;
       width: auto;
@@ -64,7 +71,7 @@
   }
 
   &__academy-text {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     color: #444444;
     font-size: 16px;
     font-weight: 400;
@@ -85,5 +92,13 @@
     background-color: #666666;
     width: 27px;
     height: 34px;
+
+    &:hover {
+      background-color: #68b738;
+    }
+
+    &:focus {
+      background-color: #68b738;
+    }
   }
 }

@@ -54,11 +54,11 @@
     @media (min-width: $tablet-width) {
       width: 100%;
       margin: 14px 0 34px;
+      flex-grow: 0;
     }
 
     @media (min-width: $desktop-width) {
-      margin: 19.4px 0 42px;
-      max-height: 90px;
+      margin: 19.4px 0 31px;
       max-width: 169px;
     }
   }
@@ -105,11 +105,7 @@
     display: block;
 
     @media (min-width: $tablet-width) {
-      max-height: 73px;
-    }
-
-    @media (min-width: $desktop-width) {
-      max-height: 67px;
+      flex-grow: 0;
     }
   }
 
@@ -142,7 +138,46 @@
   }
 
   &__item--text {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
+    color: #444444;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__weight {
+    font-family: "Lato", "Arial", sans-serif;
+    color: #444444;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__taste {
+    font-family: "Lato", "Arial", sans-serif;
+    color: #444444;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__price {
+    font-family: "Lato", "Arial", sans-serif;
     color: #444444;
     font-size: 12px;
     font-weight: 400;
@@ -183,7 +218,7 @@
   }
 
   &__description--show {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     color: #444444;
     font-size: 12px;
     line-height: 16px;

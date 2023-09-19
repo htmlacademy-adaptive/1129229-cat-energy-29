@@ -112,11 +112,13 @@
     line-height: 18px;
     text-transform: uppercase;
     transition: 0.2s;
+    min-height: 43px;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: normal;
       padding: 11px 20px;
+      min-height: auto;
     }
 
     &:hover {
@@ -161,7 +163,7 @@
     content: "";
     position: absolute;
     top: 49%;
-    left: 49%;
+    left: 50%;
     width: 15px;
     transform: translate(-50%, -50%);
     height: 15px;
@@ -169,8 +171,8 @@
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
     }
   }
 

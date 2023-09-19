@@ -1,5 +1,5 @@
 .owner {
-  padding: 26px 17px 26px;
+  padding: 25px 17px;
   border: none;
   position: relative;
   width: 320px;
@@ -110,7 +110,7 @@
   &__input {
     font-family: "Oswald", sans-serif;
     width: 100%;
-    padding: 11px 15px 8px;
+    padding: 11px 15px 6px;
     border: none;
     outline: 1px solid #e7e7e7;
     color: #444444;
@@ -118,6 +118,7 @@
     font-weight: 400;
     line-height: 18px;
     text-transform: uppercase;
+    min-height: 43px;
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
@@ -178,5 +179,9 @@
       background-repeat: no-repeat;
       z-index: 2;
     }
+  }
+
+  &__item--phone &__input {
+    min-height: 46px;
   }
 }

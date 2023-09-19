@@ -4,6 +4,7 @@
   width: 320px;
   margin: 0 auto 23px;
   position: relative;
+  max-height: 214px;
 
   &::before {
     content: "";
@@ -19,6 +20,7 @@
     width: 768px;
     margin: 0 auto 41px;
     padding: 40px 30px 24px;
+    max-height: 362px;
 
     &::before {
       width: 768px;
@@ -32,6 +34,7 @@
     width: 1440px;
     padding: 0 70px;
     margin: 0 auto 71px;
+    max-height: 287px;
 
     &::before {
       width: 1440px;
