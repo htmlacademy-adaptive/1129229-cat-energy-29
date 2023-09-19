@@ -1,0 +1,49 @@
+.main-container {
+  background: url("../../img/index/hero-background-mobile.jpg") top center no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/index/hero-background-mobile@2x.jpg") top center no-repeat;
+    background-size: 320px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    background: url("../../img/index/hero-background-desktop.jpg") top right no-repeat;
+    background-size: 50% 26%;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/index/hero-background-desktop@2x.jpg") top right no-repeat;
+      background-size: 50% 26%;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: auto;
+    left: 0%;
+    right: 0;
+    background-color: rgba(104, 183, 56, 0.85);
+    height: 302px;
+    z-index: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      display: block;
+      top: 0;
+      left: 50%;
+      height: 694px;
+    }
+  }
+}

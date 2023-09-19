@@ -20,66 +20,66 @@
     margin-left: 34px;
     padding: 25px 0 20px;
   }
+}
 
-  &__item {
-    list-style: none;
-    margin-right: 24px;
-    margin-bottom: 5px;
+.social-list__item {
+  list-style: none;
+  margin-right: 24px;
+  margin-bottom: 5px;
 
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.social-list__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social-list__link--vk {
+  mask-image: url("../../img/icon/vkontakte.svg");
+  background-color: #666666;
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-color: #68b738;
   }
 
-  &__link {
-    display: block;
-    width: 28px;
-    height: 22px;
+  &:focus {
+    background-color: #68b738;
+  }
+}
 
-    &:active {
-      opacity: 0.3;
-    }
+.social-list__link--youtube {
+  mask-image: url("../../img/icon/youtube.svg");
+  background-color: #666666;
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-color: #68b738;
   }
 
-  &__link--vk {
-    mask-image: url("../../img/icon/vkontakte.svg");
-    background-color: #666666;
-    background-repeat: no-repeat;
+  &:focus {
+    background-color: #68b738;
+  }
+}
 
-    &:hover {
-      background-color: #68b738;
-    }
+.social-list__link--telegram {
+  mask-image: url("../../img/icon/telegram.svg");
+  background-color: #666666;
+  background-repeat: no-repeat;
 
-    &:focus {
-      background-color: #68b738;
-    }
+  &:hover {
+    background-color: #68b738;
   }
 
-  &__link--youtube {
-    mask-image: url("../../img/icon/youtube.svg");
-    background-color: #666666;
-    background-repeat: no-repeat;
-
-    &:hover {
-      background-color: #68b738;
-    }
-
-    &:focus {
-      background-color: #68b738;
-    }
-  }
-
-  &__link--telegram {
-    mask-image: url("../../img/icon/telegram.svg");
-    background-color: #666666;
-    background-repeat: no-repeat;
-
-    &:hover {
-      background-color: #68b738;
-    }
-
-    &:focus {
-      background-color: #68b738;
-    }
+  &:focus {
+    background-color: #68b738;
   }
 }

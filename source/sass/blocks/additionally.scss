@@ -43,116 +43,120 @@
       top: 24px;
     }
   }
+}
 
-  &__title {
-    color: #000000;
-    font-size: 24px;
-    line-height: 26px;
-    float: left;
-    font-weight: 400;
-    margin-bottom: 40px;
-    margin-left: -3px;
+.additionally__title {
+  color: #000000;
+  font-size: 24px;
+  line-height: 26px;
+  float: left;
+  font-weight: 400;
+  margin-bottom: 40px;
+  margin-left: -3px;
 
-    @media (min-width: $tablet-width) {
-      padding: 0 42px;
-      background-color: #ffffff;
-      max-width: 295px;
-      margin-bottom: 63px;
-      font-size: 36px;
-      line-height: 36px;
-    }
-  }
-
-  &__text {
-    color: #444444;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    padding-left: 45px;
-    margin-bottom: 9px;
-
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: normal;
-      padding-left: 60px;
-    }
-  }
-
-  &__list {
-    display: grid;
-    margin: 0;
-    padding: 0;
-    gap: 15px;
-
-    @media (min-width: $tablet-width) {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 32px 60px;
-      padding: 0 40px;
-    }
-
-    @media (min-width: $desktop-width) {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px 80px;
-    }
-  }
-
-  &__item {
-    list-style: none;
-  }
-
-  &__label {
-    display: flex;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-  }
-
-  &__mask {
-    position: absolute;
-    top: -5px;
-    width: 28px;
-    height: 28px;
+  @media (min-width: $tablet-width) {
+    padding: 0 42px;
     background-color: #ffffff;
-    outline: 1px solid #cdcdcd;
+    max-width: 295px;
+    margin-bottom: 63px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
 
-    &:last-child {
-      top: -7px;
-    }
+.additionally__text {
+  color: #444444;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 45px;
+  margin-bottom: 9px;
 
-    @media (min-width: $tablet-width) {
-      width: 40px;
-      height: 40px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+    padding-left: 60px;
+  }
+}
+
+.additionally__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 60px;
+    padding: 0 40px;
   }
 
-  &__input[type="checkbox"]:checked + &__mask::before {
-    content: "";
-    position: absolute;
-    background-image: url("../../img/icon/stak.svg#check-mark");
-    background-repeat: no-repeat;
-    width: 19px;
-    height: 19px;
-    top: 46%;
-    left: 47%;
-    transform: translate(-50%, -50%);
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 80px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      width: 26px;
-      height: 26px;
-      top: 57%;
-      left: 53%;
-    }
+.additionally__item {
+  list-style: none;
+}
+
+.additionally__label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.additionally__mask {
+  position: absolute;
+  top: -5px;
+  width: 28px;
+  height: 28px;
+  background-color: #ffffff;
+  outline: 1px solid #cdcdcd;
+
+  &:last-child {
+    top: -7px;
   }
 
-  &__label:hover &__mask {
-    outline: 1px solid #bababa;
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
   }
+}
 
-  &__input[disabled] ~ &__mask {
-    opacity: 0.3;
-  }
+.additionally__input[type="checkbox"]:checked + .additionally__mask::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/icon/stak.svg#check-mark");
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+  top: 46%;
+  left: 47%;
+  transform: translate(-50%, -50%);
 
-  &__input[disabled] ~ &__text {
-    opacity: 0.3;
+  @media (min-width: $tablet-width) {
+    width: 26px;
+    height: 26px;
+    top: 57%;
+    left: 53%;
   }
+}
+
+.additionally__label:hover .additionally__mask {
+  outline: 1px solid #bababa;
+}
+
+.additionally__input:focus + .additionally__mask {
+  outline: 1px solid #bababa;
+}
+
+.additionally__input[disabled] ~ .additionally__mask {
+  opacity: 0.3;
+}
+
+.additionally__input[disabled] ~ .additionally__text {
+  opacity: 0.3;
 }
