@@ -1,4 +1,33 @@
 .additional-goods {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 2px;
+    background-color: #68b738;
+    top: 40px;
+    right: -20px;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 768px;
+      left: -30px;
+      top: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 1440px;
+      left: -6%;
+      top: 24px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 935px 245px;
@@ -63,17 +92,6 @@
     border-bottom: 1px solid #cdcdcd;
     position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 54px;
-      height: 2px;
-      background-color: #68b738;
-      top: 40px;
-      right: -20px;
-      z-index: -1;
-    }
-
     @media (min-width: $tablet-width) {
       font-size: 36px;
       line-height: 36px;
@@ -82,23 +100,11 @@
       background-color: #ffffff;
       max-width: 419px;
       padding: 0 40px;
-
-      &::before {
-        width: 384%;
-        left: -100%;
-        top: 23px;
-      }
     }
 
     @media (min-width: $desktop-width) {
       grid-column: 1 / -1;
       margin-bottom: 0;
-
-      &::before {
-        width: 1440px;
-        left: -17%;
-        top: 24px;
-      }
     }
   }
 
@@ -203,7 +209,7 @@
       flex-direction: row;
 
       @media (min-resolution: 2dppx) {
-        background: url("../../img/catalog/mobile/cat-prize-tab@2x.jpg") center center no-repeat;
+        background: url("../../img/catalog/tablet/cat-prize-tab@2x.jpg") center center no-repeat;
         background-size: 707px auto;
       }
     }
