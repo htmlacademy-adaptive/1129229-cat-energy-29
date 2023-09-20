@@ -179,8 +179,7 @@
 }
 
 .data__radio[type="radio"]:checked:focus + .data__mask {
-  outline-color: #bababa;
-  opacity: 0.6;
+  outline-color: #000000;
 }
 
 .data__radio[disabled] ~ .data__mask {
