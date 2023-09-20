@@ -150,7 +150,7 @@
 }
 
 .additionally__input:focus + .additionally__mask {
-  outline: 1px solid #bababa;
+  outline-color: #000000;
 }
 
 .additionally__input[disabled] ~ .additionally__mask {
